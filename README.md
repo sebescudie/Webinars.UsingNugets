@@ -11,7 +11,7 @@ For now, ideas can be collected and discussed in the Issues or the Projects page
 This workshop should address the two differents aspects of working with nugets in VL :
 
 - Importing and using existing C# libraries
-- Creating VL plugins around existing C# libraries
+- Creating VL plugins around existing C# libraries (whether they come from nuget or written by the user him/herself)
 
 ## Workshop format
 
