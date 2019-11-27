@@ -4,7 +4,7 @@ _This repo will collect ideas, patches and directions for a workshop about Nuget
 
 ## Repo structure
 
-For now, ideas can be collected and discussed in the Issues or the Projects pages
+For now, ideas can be collected and discussed in the Issues or the Projects pages. The README just presents the global directions for the workshop, further details will be found in the repo itself.
 
 ## Warum the name?
 
@@ -18,6 +18,8 @@ This workshop should address the two differents aspects of working with nugets i
 It's not clear yet how this workshop is going to be structured. Should it be split into two different ones? What's the part of "hands-on" stuff versus pure "lecture" stuff? A first approach would be :
 
 ### Beginner level : consume C# libraries
+
+Duration : 3 hours
 
 No (or few) programming concepts involved, just evoking with high-level terms what is a library (a nuget), where you find one and how you can _instantly_ use one in your project.
 
