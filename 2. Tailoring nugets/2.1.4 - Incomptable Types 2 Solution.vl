@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="VOD1lX4PyOsOVCheAAMSwX" LanguageVersion="2020.1.1.97" Version="0.128">
+  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+  <Patch Id="B49oQkJgJtzLYKf5LRsNQf">
+    <Canvas Id="E2DcNWZbgrhNH8qgF3joQS" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ ExtractColorPalette ************************
+
+-->
+      <Node Name="ExtractColorPalette" Bounds="511,273" Id="MiOLBRRcN23MeATKiMTenv">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="QwR8hX3HpdMMlu9dFqZpjK">
+          <Canvas Id="EuBitEZfBxTNNUe3HytZ26" CanvasType="Group">
+            <ControlPoint Id="RnM8OfNTX2AOXDeOzhViRU" Bounds="237,192" />
+            <Node Bounds="106,234,406,448" Id="O3V29fx0cANPoqu06WSaGe">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="UNFMhzHs0z1PilEMQtCSm6" Name="Force" Kind="InputPin" />
+              <Pin Id="AhKQh0H8MHcPvaIEEgeXse" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="KXlO8SP8QE9P4v9iajem1O" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="L2hahE2c8EkOw7x8yYDyzl" ManuallySortedPins="true">
+                <Patch Id="GJRtEbQZI9MOo3okwEzaru" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="GT2XjTcicBKLFhXtdRPFwD" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="215,413,85,26" Id="K4Eqb9qMPCoLLGHGl96F0x">
+                  <p:NodeReference LastCategoryFullName="ColorThiefDotNet.ColorThief" LastSymbolSource="ColorThief.Desktop.v46.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ColorThiefDotNet" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ColorThief" />
+                    <Choice Kind="OperationCallFlag" Name="GetPalette" />
+                  </p:NodeReference>
+                  <Pin Id="OvazhPjvw5hPM4ZYsNvnBQ" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NzkcT9jvZEULGK2TxMbg95" Name="Source Image" Kind="InputPin" />
+                  <Pin Id="UjjxhPzcS0xONyG5z5ZbqM" Name="Color Count" Kind="InputPin" />
+                  <Pin Id="VR6JsSBBwmOOgrDkpo8wtl" Name="Quality" Kind="InputPin" />
+                  <Pin Id="HsFqm1efd59NOOGAFcbnJk" Name="Ignore White" Kind="InputPin" />
+                  <Pin Id="UdxEKUGk5I5QSAuPdmTVzT" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="H4uJNMgxu9PMLAKQAt8SwF" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="235,317,67,26" Id="LljG5eAfRe7NAmbGbAkWpn">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Bitmap" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="Bitmap" />
+                    <Choice Kind="OperationCallFlag" Name="FromImage" />
+                  </p:NodeReference>
+                  <Pin Id="Grz05n2LvAlMUtuJM01ryY" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="GafjJyqVYB0PUOw1nb21wa" Name="Copy" Kind="InputPin" />
+                  <Pin Id="M8vZCA4PIRDPt5FOtCgxrp" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="235,275,56,26" Id="G9TFEvtAKsJNqMnM0UZutq">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToImage" />
+                    <CategoryReference Kind="Category" Name="Imaging" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="Dq6JM9YRfYhOJS51uy7bcJ" Name="Input" Kind="InputPin" />
+                  <Pin Id="K6jdhP9xTYDM98BOP0HiSW" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="170,363,54,26" Id="IyO0Fza8Ar2MnqoNhpp0tI">
+                  <p:NodeReference LastCategoryFullName="ColorThiefDotNet.ColorThief" LastSymbolSource="ColorThief.Desktop.v46.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ColorThief" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="AhgMhq6ANBvNt9PqUppu4B" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="250,494,250,156" Id="DFPM16HFcfQPacZrr0biJU">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="NntjwQ2T3AfOLGBGUkM9Pm" Name="Break" Kind="OutputPin" />
+                  <Patch Id="FmYmXvw2Vb5PpUjj8YIizK" ManuallySortedPins="true">
+                    <Patch Id="BQde2kiuqYkLtkUXtzuiDJ" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="OR0HbgEwzOcQF6S6MstyZq" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="N2KXiOwiOorNFnIMtDcJBD" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="295,522,72,26" Id="TxEDsmryKA9NpbiDOIDha5">
+                      <p:NodeReference LastCategoryFullName="ColorThiefDotNet.QuantizedColor" LastSymbolSource="ColorThief.Desktop.v46.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="QuantizedColor" />
+                        <Choice Kind="OperationCallFlag" Name="Color" />
+                      </p:NodeReference>
+                      <Pin Id="PApzk7dDINqOtgYkyzXfB2" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="P9zFmPkvDWAOd4hYdrDc2y" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="BW4sPWhbCMZMUJQ8mJZMyJ" Name="Color" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="362,561,73,26" Id="I5YU1WgSzzrO8xwQVlBN8Q">
+                      <p:NodeReference LastCategoryFullName="ColorThiefDotNet.Color" LastSymbolSource="ColorThief.Desktop.v46.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Color" />
+                        <Choice Kind="OperationCallFlag" Name="ToHexString" />
+                      </p:NodeReference>
+                      <Pin Id="JsjAcUfQa1eLDQI6UsVAcK" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Ia9Bdz6w95FLMU2GiZFhaa" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="NdUvHTWnpbYMjRsZbQmgpF" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="430,604,58,19" Id="BH5DjASXDCfQUfDp9gLOVc">
+                      <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="FromHex" />
+                      </p:NodeReference>
+                      <Pin Id="FwxtiSVDE6yQW7Ku1hwHGM" Name="Hex" Kind="InputPin" />
+                      <Pin Id="LJ3UdfjzBFXQLCVz9G3rMs" Name="Color" Kind="OutputPin" />
+                    </Node>
+                    <Pad Id="DwAG7CDWaL3Md2ss2hTAtM" Bounds="266,583,25,25" ShowValueBox="true" isIOBox="true" Value="3.">
+                      <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                        <Choice Kind="TypeFlag" Name="String" />
+                      </p:TypeAnnotation>
+                      <p:ValueBoxSettings>
+                        <p:fontsize p:Type="Int32">12</p:fontsize>
+                        <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                      </p:ValueBoxSettings>
+                    </Pad>
+                  </Patch>
+                  <ControlPoint Id="HjDg2lFs2XRLybV0oSdxBq" Bounds="297,501" Alignment="Top" />
+                  <ControlPoint Id="MoD6YAg11MyPlnH17SLO56" Bounds="432,644" Alignment="Bottom" />
+                </Node>
+                <Pad Id="B7BK0LSH6YFPpFrmvW0lvo" Bounds="122,371,35,25" ShowValueBox="true" isIOBox="true" Value="1.">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">12</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+                <Pad Id="TscGdUkMvUUNWZoh2qp0Nb" Bounds="189,303,25,25" ShowValueBox="true" isIOBox="true" Value="2.">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">12</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+              </Patch>
+              <ControlPoint Id="M7tAZrBSxyNP6zynV5rRXG" Bounds="237,241" Alignment="Top" />
+              <ControlPoint Id="CImxWza5c3LPg0oOdf7Bbs" Bounds="432,676" Alignment="Bottom" />
+              <ControlPoint Id="UxfzQlDeGdELhq0Khz9GL2" Bounds="257,241" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="BRcjSaMxzKWL3oDfuVPOHx" Bounds="432,720" />
+            <Pad Id="Pv4SH0Qzb2mPDA8DqlFey3" Bounds="36,236,25,25" ShowValueBox="true" isIOBox="true" Value="4.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">12</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="FHAEjgC4gGzPImD3InRGLL" Bounds="579,243,24,25" ShowValueBox="true" isIOBox="true" Value="1.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">12</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="GAG6F4BiBc4LnJf8tSuolu" Bounds="609,243,263,80" ShowValueBox="true" isIOBox="true" Value="GetPalette expects an instance of ColorThief. The library provides a constructor for that type, so we just provide it from there.">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="L3LIrPv6DRYL4frHVF3GZj" Bounds="579,339,24,25" ShowValueBox="true" isIOBox="true" Value="2.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">12</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="MTkmfOZUN2JMEAnUgydaIH" Bounds="609,339,272,115" ShowValueBox="true" isIOBox="true" Value="Second, the node expects a Bitmap. This is not what we expect from a high level VL node : we're more used to work with SKImage. So with those two nodes, we convert an SKImage to Bitmap so it can be used by the lib.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="UzHzQzLd9zPLNkxGe8xbR2" Bounds="570,484,24,25" ShowValueBox="true" isIOBox="true" Value="3.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">12</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="FceD03pGPxsPIaAZ85pn6w" Bounds="609,484,287,153" ShowValueBox="true" isIOBox="true" Value="Fine. The node returns something but we still don't have our classic RGBA values. Instead, we have this weird QuantizedColor type ... this is what the library returns. Luckily, wen can easily convert that to RGBA using a few nodes provided by the lib. When you're not sure about a type, simply type it in the node browser and see what the lib has to offer.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="PHyUz30wSmzL93NeY3M1Ze" Bounds="568,659,24,25" ShowValueBox="true" isIOBox="true" Value="4.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">12</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="FHxvfWbYGkKMY9YdZ7iR1E" Bounds="609,659,276,79" ShowValueBox="true" isIOBox="true" Value="As this operation is realy expensive, we wrap it inside a Cache region so that it'll only be executed if the image changes, or if we ask for a different color count.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="VEienC5Llc5PG6dzJSfUbQ" Bounds="91,778,455,19" ShowValueBox="true" isIOBox="true" Value="And voilà, we have our spread or RGBA colors that we can use in our patch !">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <ControlPoint Id="ROrToxJL743LHuvaZEZlFE" Bounds="257,212" />
+          </Canvas>
+          <Patch Id="SQc4upeMINmM2GrHmddLC2" Name="Update" ManuallySortedPins="true">
+            <Pin Id="Rx7rtFU34sTLQFVKvtiAAH" Name="Input" Kind="InputPin" Bounds="480,312" />
+            <Pin Id="LxVmNTQlp1QLhcZKrzVEcJ" Name="Output" Kind="OutputPin" Bounds="449,590" />
+            <Pin Id="To3ZBdIMuutLVKiyZSUfJN" Name="Color Count" Kind="InputPin" Bounds="294,165" DefaultValue="4">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <ProcessDefinition Id="EacRu9ll2QDO1QcVT90wtP">
+            <Fragment Id="R2fY96SdtNyMnG0SZcmKoV" Patch="SQc4upeMINmM2GrHmddLC2" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="H8HJ5eEV8oOMb9UdLcimxN" Ids="Rx7rtFU34sTLQFVKvtiAAH,RnM8OfNTX2AOXDeOzhViRU" IsHidden="true" />
+          <Slot Id="PaVGZCO8d5JNsG2WhULUP3" Name="Output" />
+          <Link Id="SD4YO7l05XFO62ITslM50p" Ids="M8vZCA4PIRDPt5FOtCgxrp,NzkcT9jvZEULGK2TxMbg95" />
+          <Link Id="ME8M8ZaaehjOomtK7wUSK8" Ids="K6jdhP9xTYDM98BOP0HiSW,Grz05n2LvAlMUtuJM01ryY" />
+          <Link Id="IqB6XOiCq8KPkZj246cOgf" Ids="RnM8OfNTX2AOXDeOzhViRU,M7tAZrBSxyNP6zynV5rRXG" />
+          <Link Id="K1XlwN5aWJiNVSnUN3r366" Ids="M7tAZrBSxyNP6zynV5rRXG,Dq6JM9YRfYhOJS51uy7bcJ" />
+          <Link Id="PpTkoogiBBTPWxgQly1j1f" Ids="AhgMhq6ANBvNt9PqUppu4B,OvazhPjvw5hPM4ZYsNvnBQ" />
+          <Link Id="OXGd4sEsNuSOQmrcw0EvQf" Ids="CImxWza5c3LPg0oOdf7Bbs,BRcjSaMxzKWL3oDfuVPOHx" />
+          <Link Id="Ih8oDm2nc4lMjqMNGypMHu" Ids="BRcjSaMxzKWL3oDfuVPOHx,LxVmNTQlp1QLhcZKrzVEcJ" IsHidden="true" />
+          <Link Id="FGcsD1LPFP4M9KOQI3iaey" Ids="HjDg2lFs2XRLybV0oSdxBq,PApzk7dDINqOtgYkyzXfB2" />
+          <Link Id="UVDueVlqbhCLq00csnTL7D" Ids="BW4sPWhbCMZMUJQ8mJZMyJ,JsjAcUfQa1eLDQI6UsVAcK" />
+          <Link Id="EWHIe98WvCdLFyVlBKSt5Z" Ids="NdUvHTWnpbYMjRsZbQmgpF,FwxtiSVDE6yQW7Ku1hwHGM" />
+          <Link Id="UG46DepzPMwMUO9QW91vhb" Ids="LJ3UdfjzBFXQLCVz9G3rMs,MoD6YAg11MyPlnH17SLO56" />
+          <Link Id="NviSgMaQXiRQS5gugcMWce" Ids="MoD6YAg11MyPlnH17SLO56,CImxWza5c3LPg0oOdf7Bbs" />
+          <Link Id="UmRR9UzlbGZPAR9qVwrySR" Ids="H4uJNMgxu9PMLAKQAt8SwF,HjDg2lFs2XRLybV0oSdxBq" />
+          <Link Id="MwIPOiuDyEBMPTEewjCrq5" Ids="UxfzQlDeGdELhq0Khz9GL2,UjjxhPzcS0xONyG5z5ZbqM" />
+          <Link Id="LwYdSX9qKWtOycC7DLkauv" Ids="ROrToxJL743LHuvaZEZlFE,UxfzQlDeGdELhq0Khz9GL2" />
+          <Link Id="Kzre7qiA1PzNEkrEni7S7Q" Ids="To3ZBdIMuutLVKiyZSUfJN,ROrToxJL743LHuvaZEZlFE" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RBsfe1p77ukLjFkjwuNADm">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="A5MY6fEfcUUMFKL78hVMlx">
+        <Canvas Id="AJUafjyN33IQW1B3NzJKGY" CanvasType="Group">
+          <Node Bounds="78,795,145,19" Id="Rrluc797UmyOY2oSb5i9qV">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="Aqhz6cjLIwwO0Lnfzvb5on" Name="Bounds" Kind="InputPin" DefaultValue="1171, 269, 600, 400">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OBO7b2rKXtnNogHdeYaKRU" Name="Input" Kind="InputPin" />
+            <Pin Id="IcLyfuBSBsWMEu8WnjLo2u" Name="Color" Kind="InputPin" />
+            <Pin Id="Kyk3TA0OdTsMjuYhtC2IWp" Name="Clear" Kind="InputPin" />
+            <Pin Id="Q198SaCoTkgLXbnefRL46Q" Name="Space" Kind="InputPin" />
+            <Pin Id="Q0CVkJsJzCnPGA6xliK2ep" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="PvHZJaR45bLPQih9A0QLZm" Name="VSync" Kind="InputPin" />
+            <Pin Id="DxGIOUGtMhlQIrYD1GyAuH" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MQuJXG00YHXP3iCvdiIljh" Name="Form" Kind="OutputPin" />
+            <Pin Id="PT7fZ6j7LBHQUJGgc2oyse" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="K5TtpGObbT7LQdm5JVC8Eq" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="98,497,125,19" Id="Dn6auxF15SFMN0Cnkl2F0d">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="D0CUHmDNn5ONG9RJZXJG89" Name="Image" Kind="InputPin" />
+            <Pin Id="NypbwW8tGAVP5l8KrKId0B" Name="Position" Kind="InputPin" />
+            <Pin Id="AmgFZ3NlQKTOGkirBo5mey" Name="Size" Kind="InputPin" />
+            <Pin Id="CwI9hfdxbHILYYwI6FO0cH" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="JmRKOprALU1MCklZ70Tbhb" Name="Anchor" Kind="InputPin" />
+            <Pin Id="QLROGdG0BXZMOUpXKOv8QW" Name="Paint" Kind="InputPin" />
+            <Pin Id="CANul653woFPB5dN6txXTK" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Uenwq4D2qv6P7zGgfArFLJ" Name="Output" Kind="OutputPin" />
+            <Pin Id="BFQmCvWTM0QMs6yw8PklAv" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="98,389,75,19" Id="TvGP03zqFj4OgjRTDRzSpW">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="assets\flower four.jpg">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HFAKHpbwHikPw4n4UQ6F4A" Name="Load" Kind="InputPin" />
+            <Pin Id="NLmeyPiRa0LOoiB2umqvEZ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GjR7dPQQarbN1uKr4A3UjT" Bounds="84,132,318,19" ShowValueBox="true" isIOBox="true" Value="How can we extract dominant colors from an image?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="275,496,103,19" Id="HoUOxmGIt1XNpys8wH2K7L">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="2.4 - Extract Colors From An Image Solution.vl">
+              <Choice Kind="ProcessNode" Name="ExtractColorPalette" />
+            </p:NodeReference>
+            <Pin Id="SGe7A4B9z5JMupAqQ5hCuG" Name="Input" Kind="InputPin" />
+            <Pin Id="Qn5ehpvuvpFPQbvNmaO7ld" Name="Color Count" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PhvjzyCaRoCNFyKYjjCVP1" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SGaAQTmefHPMFdXGLR2SjE" Comment="" Bounds="277,544,81,123" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item>1, 1, 1, 1</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="A6M0zHjcebSO66pD0RAS3h" Bounds="84,165,723,50" ShowValueBox="true" isIOBox="true" Value="After digging NugetGallery, we came accross the ColorThief nuget that seems to be suited for our task.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="110,232,109,80" Id="HJskrA16drkMQhqVVZpsai">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="S2QFPKR2UGpLC2W2W8DRha" Name="Condition" Kind="InputPin" />
+            <Patch Id="TrIG2yHS6mMMLF2digYJ9O" ManuallySortedPins="true">
+              <Patch Id="T9Uiw4vYUX9MS1OkVuV1ZA" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="IihzCmabnwIP2d0cEAzmn1" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="122,260,85,26" Id="TgeWJgZaggJQNMbICNzKUK">
+                <p:NodeReference LastCategoryFullName="ColorThiefDotNet.ColorThief" LastSymbolSource="ColorThief.Desktop.v46.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="ColorThief" />
+                  <Choice Kind="OperationCallFlag" Name="GetPalette" />
+                </p:NodeReference>
+                <Pin Id="FIBqWMJ3lxFMpCTUlOfKNO" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Ftoc67oujfLODVZ2ViCwyD" Name="Source Image" Kind="InputPin" />
+                <Pin Id="Pev55X0QAjsPOMRmK5lpnp" Name="Color Count" Kind="InputPin" />
+                <Pin Id="VL5fjVROYbfNQIulMtqPyu" Name="Quality" Kind="InputPin" />
+                <Pin Id="DsVqXMQubphO2SrK6gz5tH" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="N2L6MOQIjoMMIj5wpi6rQp" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="P7gToaRNT2AMdOcThJLuZD" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="DVuKMXTqu8IPaWIR3gK5fm" Bounds="231,241,330,79" ShowValueBox="true" isIOBox="true" Value="The GetPalette function is there, though its use seems a bit too complex : it expects a ColorThief Input, and a Bitmap.. There should be a way to make a high level node that works better in our dataflow approach.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UnGkrsaUknJLdkwBNC21hG" Bounds="392,505,239,119" ShowValueBox="true" isIOBox="true" Value="We've built this wrapper that does what we want : it takes an SKImage as input and returns a spread of colors. Under the hood though, it uses the same GetPalette node we saw earlier... Open it to see what we've done!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UdsYuVJt3emNXIgWJQe5uz" Name="Create" />
+        <Patch Id="UTWBNyJ6Gk7NQOYYXi8gro" Name="Update" />
+        <ProcessDefinition Id="J335N4cdFGjOo3wPAgHEtM">
+          <Fragment Id="MhVqrRD6SpSO3mbMbpW5Dp" Patch="UdsYuVJt3emNXIgWJQe5uz" Enabled="true" />
+          <Fragment Id="CcfjqMSg347QcKAtrwcHwy" Patch="UTWBNyJ6Gk7NQOYYXi8gro" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Ubg6Dg9iNnpOCmJnUJ7nx5" Ids="Uenwq4D2qv6P7zGgfArFLJ,OBO7b2rKXtnNogHdeYaKRU" />
+        <Link Id="VDI2HVcsIXdLoMGR7IK86B" Ids="NLmeyPiRa0LOoiB2umqvEZ,D0CUHmDNn5ONG9RJZXJG89" />
+        <Link Id="AB6bISgzP7UN9LMSiuZUgr" Ids="NLmeyPiRa0LOoiB2umqvEZ,SGe7A4B9z5JMupAqQ5hCuG" />
+        <Link Id="N0laoNrIu4sOhRu33UpexU" Ids="PhvjzyCaRoCNFyKYjjCVP1,SGaAQTmefHPMFdXGLR2SjE" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+  <NugetDependency Id="EFj9MbqE5LVNkC1xAWvvYp" Location="ksemenenko.ColorThief" Version="1.1.1.4" />
+</Document>

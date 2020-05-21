@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="FWrDWkpHhcpPOa5rlw0hfn" LanguageVersion="2020.1.1.97" Version="0.128">
+  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+  <Patch Id="B49oQkJgJtzLYKf5LRsNQf">
+    <Canvas Id="E2DcNWZbgrhNH8qgF3joQS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RBsfe1p77ukLjFkjwuNADm">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="A5MY6fEfcUUMFKL78hVMlx">
+        <Canvas Id="AJUafjyN33IQW1B3NzJKGY" CanvasType="Group">
+          <Node Bounds="84,751,145,19" Id="Rrluc797UmyOY2oSb5i9qV">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="Aqhz6cjLIwwO0Lnfzvb5on" Name="Bounds" Kind="InputPin" DefaultValue="1190, 399, 600, 400">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OBO7b2rKXtnNogHdeYaKRU" Name="Input" Kind="InputPin" />
+            <Pin Id="IcLyfuBSBsWMEu8WnjLo2u" Name="Color" Kind="InputPin" />
+            <Pin Id="Kyk3TA0OdTsMjuYhtC2IWp" Name="Clear" Kind="InputPin" />
+            <Pin Id="Q198SaCoTkgLXbnefRL46Q" Name="Space" Kind="InputPin" />
+            <Pin Id="Q0CVkJsJzCnPGA6xliK2ep" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="PvHZJaR45bLPQih9A0QLZm" Name="VSync" Kind="InputPin" />
+            <Pin Id="DxGIOUGtMhlQIrYD1GyAuH" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MQuJXG00YHXP3iCvdiIljh" Name="Form" Kind="OutputPin" />
+            <Pin Id="PT7fZ6j7LBHQUJGgc2oyse" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="K5TtpGObbT7LQdm5JVC8Eq" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="104,453,125,19" Id="Dn6auxF15SFMN0Cnkl2F0d">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawImage" />
+            </p:NodeReference>
+            <Pin Id="D0CUHmDNn5ONG9RJZXJG89" Name="Image" Kind="InputPin" />
+            <Pin Id="NypbwW8tGAVP5l8KrKId0B" Name="Position" Kind="InputPin" />
+            <Pin Id="AmgFZ3NlQKTOGkirBo5mey" Name="Size" Kind="InputPin" />
+            <Pin Id="CwI9hfdxbHILYYwI6FO0cH" Name="Size Mode" Kind="InputPin" />
+            <Pin Id="JmRKOprALU1MCklZ70Tbhb" Name="Anchor" Kind="InputPin" />
+            <Pin Id="QLROGdG0BXZMOUpXKOv8QW" Name="Paint" Kind="InputPin" />
+            <Pin Id="CANul653woFPB5dN6txXTK" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Uenwq4D2qv6P7zGgfArFLJ" Name="Output" Kind="OutputPin" />
+            <Pin Id="BFQmCvWTM0QMs6yw8PklAv" Name="Actual Bounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="104,195,75,19" Id="TvGP03zqFj4OgjRTDRzSpW">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="assets\flower four.jpg">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HFAKHpbwHikPw4n4UQ6F4A" Name="Load" Kind="InputPin" />
+            <Pin Id="NLmeyPiRa0LOoiB2umqvEZ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GjR7dPQQarbN1uKr4A3UjT" Bounds="90,118,318,19" ShowValueBox="true" isIOBox="true" Value="How can we extract dominant colors from an image?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UdsYuVJt3emNXIgWJQe5uz" Name="Create" />
+        <Patch Id="UTWBNyJ6Gk7NQOYYXi8gro" Name="Update" />
+        <ProcessDefinition Id="J335N4cdFGjOo3wPAgHEtM">
+          <Fragment Id="MhVqrRD6SpSO3mbMbpW5Dp" Patch="UdsYuVJt3emNXIgWJQe5uz" Enabled="true" />
+          <Fragment Id="CcfjqMSg347QcKAtrwcHwy" Patch="UTWBNyJ6Gk7NQOYYXi8gro" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Ubg6Dg9iNnpOCmJnUJ7nx5" Ids="Uenwq4D2qv6P7zGgfArFLJ,OBO7b2rKXtnNogHdeYaKRU" />
+        <Link Id="VDI2HVcsIXdLoMGR7IK86B" Ids="NLmeyPiRa0LOoiB2umqvEZ,D0CUHmDNn5ONG9RJZXJG89" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+</Document>

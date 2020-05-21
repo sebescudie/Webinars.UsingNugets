@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="QhAZ9xNYHe6MaVU2Mhasaj" LanguageVersion="2020.1.1.97" Version="0.128">
+  <NugetDependency Id="BTl4dbtTy7kP07S9gBubks" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+  <Patch Id="HHBdnb9xLg5Mf5budnGcJL">
+    <Canvas Id="KUnpYsCVNCnNbqD77fZxbD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="AowUlAZgrTyQN4WWXOV6Ec">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="G1wE36iZMmGO8KGDnY0YHX">
+        <Canvas Id="UWqsuJMocpDLZ6odIq4VjS" CanvasType="Group">
+          <Node Bounds="173,342,76,26" Id="UCEjblmHgYpNrcOtE1KDX0">
+            <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="StringExtensionLibrary" />
+              <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
+              <Choice Kind="OperationCallFlag" Name="Capitalize" />
+            </p:NodeReference>
+            <Pin Id="M3DMSHo84E0MIhk4UPJ7cb" Name="Input" Kind="StateInputPin" />
+            <Pin Id="RUdi9tUU1uROLkK0TCnpFB" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JabKyveeHO2Qdkf78NISAv" Comment="" Bounds="175,307,78,15" ShowValueBox="true" isIOBox="true" Value="vvvv gamma">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LPudzDSuw9rLgk2g4E9PPB" Comment="" Bounds="175,394,66,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="354,341,102,19" Id="AmsQecfPUWrOiBnygjoJ5v">
+            <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
+              <Choice Kind="OperationCallFlag" Name="CreateHashSha256" />
+            </p:NodeReference>
+            <Pin Id="Kx1s5AGhMjCMpFFBxKds0o" Name="Val" Kind="InputPin" />
+            <Pin Id="LZxtaJ7eYFXLFTpbeZOkjK" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SGy49BF5s9rM2MITWqx3kb" Comment="Val" Bounds="356,306,78,15" ShowValueBox="true" isIOBox="true" Value="encrypt me">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="USyyHI06JtNN3FTkzngB1V" Comment="" Bounds="356,393,140,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="154,556,102,88" Id="AUDeHAWmRlfOqMQiYWJBGw">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="GhrHFqhI5lhPZC7eTEdJtB" Name="Break" Kind="OutputPin" />
+            <Patch Id="PK6QPoBUkjLNYyCOHk3l8K" ManuallySortedPins="true">
+              <Patch Id="FkGS99NtGNANgG8oW1Fk5z" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Oc8p7RySklPMpkySbp8K3d" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="LZrvWaDKcJKOINPDMrX4NL" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="166,587,78,26" Id="VxTcW0ePpyiNca5BSIuvji">
+                <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="StringExtensionLibrary" />
+                  <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
+                  <Choice Kind="OperationCallFlag" Name="RemovePrefix" />
+                </p:NodeReference>
+                <Pin Id="QvvCnPk0pRCPdzpf7ZuVUx" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DzIcK7gTcNjNLnALAzOba5" Name="Prefix" Kind="InputPin" DefaultValue="pre_">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="QEYfoN3l7dsLUyZlePe3bH" Name="Ignore Case" Kind="InputPin" DefaultValue="False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="ILTA2tyRpyRMcl7dJLuzUD" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="IIr6ZGxGJgDMA5hfElKJ2e" Bounds="168,563" Alignment="Top" />
+            <ControlPoint Id="CQWfbJkOEuqNvP1kAOma2h" Bounds="168,638" Alignment="Bottom" />
+          </Node>
+          <Pad Id="OEynYeUttQZPfmJtUvI7Ae" Comment="" Bounds="168,468,85,76" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item>pre_Hello</Item>
+              <Item>pre_String</Item>
+              <Item>pre_Extensions</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="J3BOvZj8X5sP8wQa1CiHSA" Comment="" Bounds="168,675,77,65" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="354,587,76,26" Id="ETgzGbYUHjwPhs2zzT0P3Y">
+            <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
+              <Choice Kind="OperationCallFlag" Name="ReverseSlash" />
+            </p:NodeReference>
+            <Pin Id="PKVMj4k8VwzQRce5ZQZqPH" Name="Input" Kind="StateInputPin" />
+            <Pin Id="H4IMF8fGFbrNqx9nDsfekJ" Name="Direction" Kind="InputPin" />
+            <Pin Id="SekuO1tIEPmPgzgQlY2i9k" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="TUbklpRzUvFOujUF5GBtsj" Comment="" Bounds="356,528,91,15" ShowValueBox="true" isIOBox="true" Value="reverse/slash">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UPX27cjQStoMY5mYjSMFuy" Comment="" Bounds="356,649,69,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="572,587,76,26" Id="A4aCc1AEAlMMNXNGom9z3B">
+            <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
+              <Choice Kind="OperationCallFlag" Name="IsValidIPv4" />
+            </p:NodeReference>
+            <Pin Id="TpqZu1rjkf8PhwmL5BLE3V" Name="Input" Kind="StateInputPin" />
+            <Pin Id="JpDlKl5yiiqNSVDzaGy4z7" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ApVW5PYjX6WP0bjrDc4qyi" Comment="" Bounds="574,528,116,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.256">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PC89ggpAo4EPtpudIRHn8J" Comment="" Bounds="574,649,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U2NmRpVpn3wLNtYHnWBp1n" Bounds="166,202,527,52" ShowValueBox="true" isIOBox="true" Value="Now that we've installed the StringExtensionsLibrary nuget, many string utils are available to us :">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">11</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Tu1RJmUEw7YPNQ6gzcOX5Z" Bounds="150,814,527,52" ShowValueBox="true" isIOBox="true" Value="... and many more! Dig the node browser for more.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">11</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="T7LuWDXXTZUQSzf5fdxcv2" Name="Create" />
+        <Patch Id="La4FK8F43N9P7ZIj0mCECI" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="SGQ8U8LTkljOzOGCzoSbqV">
+          <Fragment Id="U26MLP4h755P54iYtvtdtw" Patch="T7LuWDXXTZUQSzf5fdxcv2" Enabled="true" />
+          <Fragment Id="DTJsNFpYzxmOQSg8rY4Ryo" Patch="La4FK8F43N9P7ZIj0mCECI" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="GWdSZcsNcDLP4JN4wnQQxf" Ids="JabKyveeHO2Qdkf78NISAv,M3DMSHo84E0MIhk4UPJ7cb" />
+        <Link Id="IH1hX5hfIUbOzgztwy1CaA" Ids="RUdi9tUU1uROLkK0TCnpFB,LPudzDSuw9rLgk2g4E9PPB" />
+        <Link Id="DMyEq3tF8MpMiZdJi2GioF" Ids="SGy49BF5s9rM2MITWqx3kb,Kx1s5AGhMjCMpFFBxKds0o" />
+        <Link Id="PrGzLDQ6VYTQAwZ8PZs8bu" Ids="LZxtaJ7eYFXLFTpbeZOkjK,USyyHI06JtNN3FTkzngB1V" />
+        <Link Id="GSOyogM33JzM65aJvADZlO" Ids="IIr6ZGxGJgDMA5hfElKJ2e,QvvCnPk0pRCPdzpf7ZuVUx" />
+        <Link Id="KwspeiAtFUEPGwxA6Z8Rvd" Ids="OEynYeUttQZPfmJtUvI7Ae,IIr6ZGxGJgDMA5hfElKJ2e" />
+        <Link Id="SE3tjEVFLuWLsB9SE6iA3m" Ids="ILTA2tyRpyRMcl7dJLuzUD,CQWfbJkOEuqNvP1kAOma2h" />
+        <Link Id="PkiuEXcuZi9QNQ8lNsGRML" Ids="CQWfbJkOEuqNvP1kAOma2h,J3BOvZj8X5sP8wQa1CiHSA" />
+        <Link Id="U81jS605hCOPdeGUZBsmij" Ids="TUbklpRzUvFOujUF5GBtsj,PKVMj4k8VwzQRce5ZQZqPH" />
+        <Link Id="PIAP3ve9L0kPxRlmUSh0O1" Ids="SekuO1tIEPmPgzgQlY2i9k,UPX27cjQStoMY5mYjSMFuy" />
+        <Link Id="BqPMsnbKOfVPNuBNG0SMsZ" Ids="ApVW5PYjX6WP0bjrDc4qyi,TpqZu1rjkf8PhwmL5BLE3V" />
+        <Link Id="AuW9Y5SlEHtPRQ2UWWDxRO" Ids="JpDlKl5yiiqNSVDzaGy4z7,PC89ggpAo4EPtpudIRHn8J" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="TjDI5IiHApwO99PhAaFVSm" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+  <NugetDependency Id="DmAmlY4MBowMdTyNre77Oz" Location="StringExtensionsLibrary" Version="1.0.0" />
+</Document>

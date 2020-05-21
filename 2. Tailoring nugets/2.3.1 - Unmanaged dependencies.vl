@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Idf4D8by91aMlN0DzydBbA" LanguageVersion="2020.1.1.97" Version="0.128">
+  <NugetDependency Id="VMcgsnMQP0RM1QA1mmuFuL" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+  <Patch Id="BTbJA9CocAcQAOCXRE90nG">
+    <Canvas Id="JgP4pthbRRVPtfsFugLZMv" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="BOpgCa3GcJkNodJ189Jgfi">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ci1yLgdO5JVPcsy43OalX1">
+        <Canvas Id="VBITPVjplNLNqYrgKCt4Qg" CanvasType="Group">
+          <Pad Id="NQd7Tf6P6s3P4baOjcSfjM" Bounds="53,108,431,0" ShowValueBox="true" isIOBox="true" Value="In this example, we'd like to check the similarity between two images.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="60,254,75,19" Id="RpGpa6WfOcbPvA8SMRCcnd">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="VD9SuiXi49EOtCXQXOLx09" Name="Filename" Kind="InputPin" />
+            <Pin Id="QSMrYS5q6s4NNpuzhVe8bc" Name="Load" Kind="InputPin" />
+            <Pin Id="AEx7fPywdwzLVPYjsJXyoH" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Krliksbh168OKtjtjEiwFv" Comment="Filename" Bounds="62,216,140,15" ShowValueBox="true" isIOBox="true" Value="assets\mona_dog.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="361,254,75,19" Id="O6xFPj1Ga5LPHgKq3AX8CJ">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageReader" />
+            </p:NodeReference>
+            <Pin Id="L8Qx3VegDPgNOh8z1RM0a7" Name="Filename" Kind="InputPin" />
+            <Pin Id="UTONRkEFHPrQB5mTBrZ6ty" Name="Load" Kind="InputPin" />
+            <Pin Id="UUnpr7GiEtdPe4ezeicIbv" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HUJIT0HeLmmPsomPtxDJlv" Comment="Filename" Bounds="363,216,140,15" ShowValueBox="true" isIOBox="true" Value="assets\mona_normal.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="LnuYywydh10PFddNCSVHWJ" Name="Create" />
+        <Patch Id="RaIyVf8Ftz8QVOqnVayZyE" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="BeP92XRRPFnMDOaAaAJynX">
+          <Fragment Id="FEREWPjHQOTMnJ4OEA9jMI" Patch="LnuYywydh10PFddNCSVHWJ" Enabled="true" />
+          <Fragment Id="TIYHHg5fd1kM4arISS214t" Patch="RaIyVf8Ftz8QVOqnVayZyE" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="CdbCJGU3XUFNc0fZ5Hnw2U" Ids="Krliksbh168OKtjtjEiwFv,VD9SuiXi49EOtCXQXOLx09" />
+        <Link Id="S4sXx3YXFOpMgGT1ozA3Rx" Ids="HUJIT0HeLmmPsomPtxDJlv,L8Qx3VegDPgNOh8z1RM0a7" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="E23k3aa1mNPMkdF1Pniyvf" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+</Document>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Idf4D8by91aMlN0DzydBbA" LanguageVersion="2020.1.1.97" Version="0.128">
+  <NugetDependency Id="VMcgsnMQP0RM1QA1mmuFuL" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+  <Patch Id="BTbJA9CocAcQAOCXRE90nG">
+    <Canvas Id="JgP4pthbRRVPtfsFugLZMv" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ CalculateDCTHash ************************
+
+-->
+      <Node Name="CalculateDCTHash" Bounds="302,479" Id="SWnlAH0fxbLLImC70Ofqtb">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="G0qy16d54WQOEV54Lhsgxt">
+          <Canvas Id="PZi4MKh7SpSOVUTb7sg1be" CanvasType="Group">
+            <Node Bounds="347,410,170,114" Id="RPPam5hM6iUNI3NcPobyid">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="H4vwNjbXImWLWkCY7RBZun" Name="Force" Kind="InputPin" />
+              <Pin Id="F0X1uCdOtBwPiFeussW1va" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Q5l6Z7HSuLoM8n22uuD3eK" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="UpOKxYj3xkPLiS3j0RX9tP" ManuallySortedPins="true">
+                <Patch Id="VVEhkztuvtpMR9mMUIeAeN" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Uf9WEnO3qu4Mwyv8uWYoPG" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="359,477,96,26" Id="Cc4PIbA8QPiNMh0RAbMPXg">
+                  <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="DupImageLib" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ImageHashes" />
+                    <Choice Kind="OperationCallFlag" Name="CalculateDctHash" />
+                    <PinReference Kind="InputPin" Name="Path" />
+                  </p:NodeReference>
+                  <Pin Id="J2TvEyNoUlvOdUpXIi9LVT" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TbGToxbu2omLqnqMt2oWdP" Name="Path" Kind="InputPin" />
+                  <Pin Id="KcQ6agKMiIKNurRAnIPeVA" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="C3UNlDtUhqBOB1m8mt4yrg" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="359,434,64,26" Id="AQ2F7jfCBOlOfEJLSHFHhZ">
+                  <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ImageHashes" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="S8Cru0RXSNJND4d5jTd8OJ" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="450,434,55,19" Id="H9TIJ14RpxpLJpohwt3P72">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="KAtRKRncyMoMPNGvpy3WIK" Name="Input" Kind="InputPin" />
+                  <Pin Id="TmNQW8suoJjPL1pGuHbLHQ" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="Nb3jhBOIhGILtv2jz7x94f" Bounds="452,417" Alignment="Top" />
+              <ControlPoint Id="BAf4M156MQeMCGyfWf4oMC" Bounds="452,518" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="OWf5sYCdnpGLKRitpANnbu" Bounds="452,378" />
+            <ControlPoint Id="QgAMxqyPKSXMd8toF6kfvT" Bounds="452,555" />
+          </Canvas>
+          <Patch Id="HBFbJH12t2BMUiCXWA4Ev2" Name="Create" />
+          <Patch Id="QDAXIp5sA4vNktBsHlOYHH" Name="Update">
+            <Pin Id="Dq4hUn8AFw5OxrCKl9YEEi" Name="Path" Kind="InputPin" Bounds="460,363" DefaultValue="">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PilH7pZ8RdtPxQlKWCkOLO" Name="Hash" Kind="OutputPin" Bounds="455,573" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="G7Ij8kjNEzYL7qrAitrjq1">
+            <Fragment Id="NHQpA6fSlleOevYdYDTaKO" Patch="HBFbJH12t2BMUiCXWA4Ev2" Enabled="true" />
+            <Fragment Id="GsMLazTt35xMBDYhQsKBsU" Patch="QDAXIp5sA4vNktBsHlOYHH" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DTxUVbuwCpUN2CXjDFs4x9" Ids="S8Cru0RXSNJND4d5jTd8OJ,J2TvEyNoUlvOdUpXIi9LVT" />
+          <Link Id="SQlJEZYTw67LJuFUO3tAUt" Ids="TmNQW8suoJjPL1pGuHbLHQ,TbGToxbu2omLqnqMt2oWdP" />
+          <Link Id="ESxl1Xqq7E2MWNPBjfOkUZ" Ids="Nb3jhBOIhGILtv2jz7x94f,KAtRKRncyMoMPNGvpy3WIK" />
+          <Link Id="AogoSUNFOzIPUGX9BKePT7" Ids="C3UNlDtUhqBOB1m8mt4yrg,BAf4M156MQeMCGyfWf4oMC" />
+          <Link Id="TthkgXLaGI7NRIFgXA4pdE" Ids="OWf5sYCdnpGLKRitpANnbu,Nb3jhBOIhGILtv2jz7x94f" />
+          <Link Id="P4F1VPzY1ZPPnOanvjyhHY" Ids="Dq4hUn8AFw5OxrCKl9YEEi,OWf5sYCdnpGLKRitpANnbu" IsHidden="true" />
+          <Link Id="AZcqkRLH8teMTBIMFnT8oc" Ids="BAf4M156MQeMCGyfWf4oMC,QgAMxqyPKSXMd8toF6kfvT" />
+          <Link Id="SJqd6zHDGdyMbs8d4DAFIL" Ids="QgAMxqyPKSXMd8toF6kfvT,PilH7pZ8RdtPxQlKWCkOLO" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="BOpgCa3GcJkNodJ189Jgfi">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ci1yLgdO5JVPcsy43OalX1">
+        <Canvas Id="VBITPVjplNLNqYrgKCt4Qg" CanvasType="Group">
+          <Pad Id="NQd7Tf6P6s3P4baOjcSfjM" Bounds="53,108,431,0" ShowValueBox="true" isIOBox="true" Value="In this example, we'd like to check the similarity between two images.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Krliksbh168OKtjtjEiwFv" Comment="Filename" Bounds="62,216,140,15" ShowValueBox="true" isIOBox="true" Value="assets\mona_dog.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HUJIT0HeLmmPsomPtxDJlv" Comment="Filename" Bounds="363,216,140,15" ShowValueBox="true" isIOBox="true" Value="assets\flower four.jpg">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="60,264,100,19" Id="HZpVwGlBwSdLEQhJXOOc9x">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="2.8 - Unmanaged dependencies Solution.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CalculateDCTHash" />
+            </p:NodeReference>
+            <Pin Id="NJ8thNkldKrL4tgGjGcPqk" Name="Path" Kind="InputPin" />
+            <Pin Id="UEIt2PT6lhwOaUrAxS4gt7" Name="Hash" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="361,264,100,19" Id="LGjF9Ya11HQPUeVh0hjYcG">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="2.8 - Unmanaged dependencies Solution.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CalculateDCTHash" />
+            </p:NodeReference>
+            <Pin Id="Uym62v0IPSPMJq5DqPdU2g" Name="Path" Kind="InputPin" />
+            <Pin Id="Hpuyngp5PnSPwxFqLx24eR" Name="Hash" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="171,367,90,19" Id="RubiyIIDKqNMtH6JQcMq5z">
+            <p:NodeReference LastCategoryFullName="DupImageLib.ImageHashes" LastSymbolSource="DupImageLib.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="CompareHashes" />
+              <PinReference Kind="InputPin" Name="Hash 1">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                  <Choice Kind="TypeFlag" Name="UInt64" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="HuPxXaBeXkTPjJl5tN591a" Name="Hash 1" Kind="InputPin" />
+            <Pin Id="HcZanuwBbQGO9diixrVtdr" Name="Hash 2" Kind="InputPin" />
+            <Pin Id="LMMI1gAxZlyMkEwNxfFWos" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="HrFSNlAb9jNM4AhkV57uf2" Comment="" Bounds="173,410,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NAa7QZDvXkaQcl9znksNIw" Bounds="121,369,35,19" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KnNmGaQdO4hNkqpGWWJl8o" Bounds="13,265,35,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HyG3t9luEuZLVXETQP3fpU" Bounds="576,213,35,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UmXdP4OpTAiNBG3bBK94Wu" Bounds="612,213,245,138" ShowValueBox="true" isIOBox="true" Value="Now that we've explicitely added a search path for DupImageLib's native dependencies, VVVV can pick it up and evaluate the nodes without any problem. Again, the node was a bit too low-level for us, so we wrapped it in a new process node.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="I7OL3IRNjYJPsTg22379Ma" Bounds="576,393,35,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BS1Rvut03DIOYPprSrzSeP" Bounds="612,393,246,63" ShowValueBox="true" isIOBox="true" Value="The CompareHashes operation comes directly from the lib, no need to wrap it here!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JvvW2sW88HsMoDu0hoh9Ax" Bounds="173,437,268,63" ShowValueBox="true" isIOBox="true" Value="The similarity value can go from 0 to 1.&#xD;&#xA;&#xD;&#xA;1 means the images are exactly similar.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="LnuYywydh10PFddNCSVHWJ" Name="Create" />
+        <Patch Id="RaIyVf8Ftz8QVOqnVayZyE" Name="Update" />
+        <ProcessDefinition Id="BeP92XRRPFnMDOaAaAJynX">
+          <Fragment Id="FEREWPjHQOTMnJ4OEA9jMI" Patch="LnuYywydh10PFddNCSVHWJ" Enabled="true" />
+          <Fragment Id="TIYHHg5fd1kM4arISS214t" Patch="RaIyVf8Ftz8QVOqnVayZyE" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JOKX3scKxJmPMuVy3GqcYU" Ids="Krliksbh168OKtjtjEiwFv,NJ8thNkldKrL4tgGjGcPqk" />
+        <Link Id="P3Jgn9X8LWTOVJqFRiReyS" Ids="HUJIT0HeLmmPsomPtxDJlv,Uym62v0IPSPMJq5DqPdU2g" />
+        <Link Id="QHXhhz0VoTWOaM6gG2MFT3" Ids="Hpuyngp5PnSPwxFqLx24eR,HcZanuwBbQGO9diixrVtdr" />
+        <Link Id="TOjhSWZb8aQOEKHWEWRUZz" Ids="UEIt2PT6lhwOaUrAxS4gt7,HuPxXaBeXkTPjJl5tN591a" />
+        <Link Id="BJjprBEZip5N6V52j1LSPq" Ids="LMMI1gAxZlyMkEwNxfFWos,HrFSNlAb9jNM4AhkV57uf2" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="E23k3aa1mNPMkdF1Pniyvf" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+  <NugetDependency Id="OImFxpD0jjMOtsMdpwh94v" Location="DupImageLib" Version="1.1.0" />
+  <NugetDependency Id="Lfd0s3ACLAIPCQABY4BFMj" Location="Magick.NET.Core-Q8.Native" Version="7.0.5.501" />
+</Document>
