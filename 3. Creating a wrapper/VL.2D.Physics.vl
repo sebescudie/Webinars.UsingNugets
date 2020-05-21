@@ -8,7 +8,7 @@
     ************************ World ************************
 
 -->
-      <Node Name="World" Bounds="339,261" StructureOfTypeDefinition="Vector2" Id="OLPPizytYjUQZGkUZ7cmMF">
+      <Node Name="World" Bounds="339,261" Id="OLPPizytYjUQZGkUZ7cmMF">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -638,7 +638,7 @@
     ************************ Body ************************
 
 -->
-      <Node Name="Body" Bounds="339,309" StructureOfTypeDefinition="Vector2" Id="FRJVTKksZAGOf4gzz1w6lE">
+      <Node Name="Body" Bounds="339,309" Id="FRJVTKksZAGOf4gzz1w6lE">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -983,7 +983,7 @@
     ************************ Fixture ************************
 
 -->
-      <Node Name="Fixture" Bounds="339,366" StructureOfTypeDefinition="Vector2" Id="Ekox0RK6CEaMZIKqllG3jv">
+      <Node Name="Fixture" Bounds="339,366" Id="Ekox0RK6CEaMZIKqllG3jv">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1019,7 +1019,7 @@
     ************************ BodyType ************************
 
 -->
-      <Node Name="BodyType" Bounds="476,366" StructureOfTypeDefinition="Vector2" Id="As67ujT45iRNJLXE35jHpc">
+      <Node Name="BodyType" Bounds="476,366" Id="As67ujT45iRNJLXE35jHpc">
         <p:NodeReference>
           <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
           <FullNameCategoryReference ID="Primitive" />
