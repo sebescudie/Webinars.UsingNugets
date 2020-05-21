@@ -283,7 +283,7 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="FqYgqeUnCzlLlaOKHlxsoI" Name="Body Type" Kind="InputPin" DefaultValue="Dynamic">
-                  <p:TypeAnnotation LastCategoryFullName="2D.Physics" LastSymbolSource="VL.2D.Physics.vl">
+                  <p:TypeAnnotation LastCategoryFullName="Aether.Physics2D.Dynamics" LastSymbolSource="Aether.dll">
                     <Choice Kind="TypeFlag" Name="BodyType" />
                   </p:TypeAnnotation>
                 </Pin>

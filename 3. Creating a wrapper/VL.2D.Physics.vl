@@ -8,7 +8,7 @@
     ************************ World ************************
 
 -->
-      <Node Name="World" Bounds="339,261" Id="OLPPizytYjUQZGkUZ7cmMF">
+      <Node Name="World" Bounds="338,261" Id="OLPPizytYjUQZGkUZ7cmMF">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -367,7 +367,7 @@
           </ProcessDefinition>
         </Patch>
       </Node>
-      <Canvas Id="Vt19lSzSUkhLbwa3h6FWdx" Name="Utils" Position="339,446">
+      <Canvas Id="Vt19lSzSUkhLbwa3h6FWdx" Name="Utils" Position="338,383">
         <!--
 
     ************************ ToAetherVector2 ************************
@@ -416,12 +416,12 @@
     ************************ FromAeatherVector2 ************************
 
 -->
-        <Node Name="FromAeatherVector2" Bounds="372,423,120,143" Id="OiJamtfKHLBNVroRZi6YLA">
+        <Node Name="FromAeatherVector2" Bounds="536,232,120,143" Id="OiJamtfKHLBNVroRZi6YLA">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
           <Patch Id="PSVQaWigCzGPBRqPoryeb6">
-            <Node Bounds="384,470,44,26" Id="IgkBeRD5bW5L7s5mWLom7Q">
+            <Node Bounds="548,279,44,26" Id="IgkBeRD5bW5L7s5mWLom7Q">
               <p:NodeReference LastCategoryFullName="Aether.Physics2D.Common.Maths.Vector2" LastSymbolSource="Aether.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Vector2" />
@@ -431,7 +431,7 @@
               <Pin Id="PnbaTklUbQMQJjaeztNlqf" Name="Output" Kind="StateOutputPin" />
               <Pin Id="AVJjt0llZ3vPuwhVRYgjCD" Name="X" Kind="OutputPin" />
             </Node>
-            <Node Bounds="436,470,44,26" Id="OTxnZVLgTZkPAN9qyJo2P5">
+            <Node Bounds="600,279,44,26" Id="OTxnZVLgTZkPAN9qyJo2P5">
               <p:NodeReference LastCategoryFullName="Aether.Physics2D.Common.Maths.Vector2" LastSymbolSource="Aether.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Vector2" />
@@ -441,12 +441,12 @@
               <Pin Id="Eta5TEDM1cbPlk6NkGRyDb" Name="Output" Kind="StateOutputPin" />
               <Pin Id="KUZPuPBiP1cNs8eIJDzE8F" Name="Y" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="ISeoh2iYwjyNJFc2mO6Kjx" Bounds="386,441" />
+            <ControlPoint Id="ISeoh2iYwjyNJFc2mO6Kjx" Bounds="550,250" />
             <Link Id="VwyGo9heguhLOrBt3IHs1Y" Ids="ISeoh2iYwjyNJFc2mO6Kjx,HbmjgocsG3FOQaz8fbueuM" />
             <Pin Id="NZFdwrAA7qMMStXgwufRJz" Name="Input" Kind="InputPin" Bounds="419,450" />
             <Link Id="L8kARP1ixxCNfyLPgVW188" Ids="NZFdwrAA7qMMStXgwufRJz,ISeoh2iYwjyNJFc2mO6Kjx" IsHidden="true" />
             <Link Id="EssMtuehJPvPR5V12BQwBQ" Ids="ISeoh2iYwjyNJFc2mO6Kjx,M6JFcocvTRSNVdn2u1p1ZF" />
-            <Node Bounds="434,510,46,19" Id="MnBT9zjF6lFNgrV2sbT3pk">
+            <Node Bounds="598,319,46,19" Id="MnBT9zjF6lFNgrV2sbT3pk">
               <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -458,7 +458,7 @@
             </Node>
             <Link Id="BGMgmdCKwYAN8djF5QWmHE" Ids="AVJjt0llZ3vPuwhVRYgjCD,D0VOxaFZxhDN3wTJ2odzhQ" />
             <Link Id="SWCX78MDB1HOHSqe3SjfFe" Ids="KUZPuPBiP1cNs8eIJDzE8F,JaSVn8tuhjkLiu6h8mFN8K" />
-            <ControlPoint Id="IolgpYpC4K1N7WDrPTreqA" Bounds="436,549" />
+            <ControlPoint Id="IolgpYpC4K1N7WDrPTreqA" Bounds="600,358" />
             <Link Id="MVpocgVf5QuOk8IGS303M8" Ids="MVvJeH5ET3SLVN13pC4gUn,IolgpYpC4K1N7WDrPTreqA" />
             <Pin Id="SYDMnhkUoOIOcS2IaR9lJB" Name="Output" Kind="OutputPin" Bounds="434,548" />
             <Link Id="Jg2ax78c8KvL84yKWFEd4S" Ids="IolgpYpC4K1N7WDrPTreqA,SYDMnhkUoOIOcS2IaR9lJB" IsHidden="true" />
@@ -466,93 +466,15 @@
         </Node>
         <!--
 
-    ************************ IsShape (Body) ************************
-
--->
-        <Node Name="IsShape (Body)" Bounds="639,650,313,281" Id="BZqAMllyhjiOtx9fNLEWXc" Summary="Tells whether the input Body is of the specified shape">
-          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
-            <Choice Kind="OperationDefinition" Name="Operation" />
-          </p:NodeReference>
-          <Patch Id="SKhcZwqsXvJNkq0jS8JHcE">
-            <Node Bounds="651,690,64,26" Id="EdPFH9w4mHiONd8XbZmEV9">
-              <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="FixtureList" />
-              </p:NodeReference>
-              <Pin Id="MmueybGwKZSOyEo9Cb1zNo" Name="Input" Kind="StateInputPin" />
-              <Pin Id="SdEL05wKxi7QR8jKjQqbmS" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="O2KEXtJ3Q18P2a42iQ0OEf" Name="Fixture List" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="710,727,80,19" Id="BKC60nzw7CVQWUoUh4ESml">
-              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
-              </p:NodeReference>
-              <Pin Id="KbgOHXCGJqsQM29ol6fyQ8" Name="Input" Kind="StateInputPin" />
-              <Pin Id="KEBdSwBTSSvMOXl0iJSO0W" Name="Default Value" Kind="InputPin" />
-              <Pin Id="Ur7X9OjwaFBMnj9cTG6WdG" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="B2FOdJeRvdOLrttnMrpK8h" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="785,761,44,26" Id="PDvZZjxJlWxPRddSwuPya4">
-              <p:NodeReference LastCategoryFullName="2D.Physics.Fixture" LastSymbolSource="VL.2D.Physics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Fixture" />
-                <Choice Kind="OperationCallFlag" Name="Shape" />
-              </p:NodeReference>
-              <Pin Id="IqVkeTrWTUKOGc0uMurn2U" Name="Input" Kind="StateInputPin" />
-              <Pin Id="V3ORNnEwxYOQBejBBY1MSn" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="NJZp47ytjQDPlcDw1JpvKO" Name="Shape" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="824,804,65,26" Id="MRnbNQ2dteYLeq4WizmF9y">
-              <p:NodeReference LastCategoryFullName="2D.Physics.Shape" LastSymbolSource="VL.2D.Physics.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="Vector2Type" Name="Shape" />
-                <Choice Kind="OperationCallFlag" Name="ShapeType" />
-              </p:NodeReference>
-              <Pin Id="Lr2vmMEu1yIPFpYYqy0eWg" Name="Input" Kind="StateInputPin" />
-              <Pin Id="QZY3ua1KJOAMGv2zDbHWRs" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="L7nlkHvd90XLZDojvO7WVa" Name="Shape Type" Kind="OutputPin" />
-            </Node>
-            <Link Id="A950JFhVp0FNZHPIKuHas2" Ids="O2KEXtJ3Q18P2a42iQ0OEf,KbgOHXCGJqsQM29ol6fyQ8" />
-            <Link Id="A5SbUp3Y8ufN5uTLgC5OyQ" Ids="B2FOdJeRvdOLrttnMrpK8h,IqVkeTrWTUKOGc0uMurn2U" />
-            <Link Id="PIgWPv2AVPKLlnis2mTZ2Y" Ids="NJZp47ytjQDPlcDw1JpvKO,Lr2vmMEu1yIPFpYYqy0eWg" />
-            <ControlPoint Id="EwZJjZhXQfKNtM8UYgzRlO" Bounds="653,668" />
-            <Link Id="TFdgmL7wbfQOhfx6DEqWqf" Ids="EwZJjZhXQfKNtM8UYgzRlO,MmueybGwKZSOyEo9Cb1zNo" />
-            <Pin Id="Qs1qF9Df2jjPtWoxEr1jzX" Name="Input" Kind="InputPin" Bounds="724,401" Summary="The body to test" />
-            <Link Id="BW2XlIaj4AiMgb912MuSDk" Ids="Qs1qF9Df2jjPtWoxEr1jzX,EwZJjZhXQfKNtM8UYgzRlO" IsHidden="true" />
-            <Node Bounds="884,858,25,19" Id="ELFi81DPKdELJYXVk5YMMe">
-              <p:NodeReference LastCategoryFullName="2D.Physics.ShapeType" LastSymbolSource="VL.2D.Physics.vl">
-                <CategoryReference Kind="Category" Name="2D" />
-                <CategoryReference Kind="Category" Name="Physics" />
-                <CategoryReference Kind="Vector2Type" Name="ShapeType" />
-                <Choice Kind="OperationCallFlag" Name="=" />
-              </p:NodeReference>
-              <Pin Id="CT7SlmXXdrwOT5drvw0xFc" Name="Input" Kind="InputPin" />
-              <Pin Id="AbtqqokzCQ7PXEuElpgIAX" Name="Input 2" Kind="InputPin" />
-              <Pin Id="MPhBrsuDETVNDErn5bF38T" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Link Id="EyRMWPhwA6NLET39ZkEZaq" Ids="L7nlkHvd90XLZDojvO7WVa,CT7SlmXXdrwOT5drvw0xFc" />
-            <ControlPoint Id="SPzuwrB4G6uP4J89br9KPi" Bounds="906,809" />
-            <Link Id="Qqz2Zts17jpOVtjje1xTEd" Ids="SPzuwrB4G6uP4J89br9KPi,AbtqqokzCQ7PXEuElpgIAX" />
-            <Pin Id="RJfIxEFnxsLO2WXftFFZqY" Name="Filter" Kind="InputPin" Bounds="913,450" Summary="The shape we want to check against" />
-            <Link Id="P3YzHuIgw39OT3kTuAanMA" Ids="RJfIxEFnxsLO2WXftFFZqY,SPzuwrB4G6uP4J89br9KPi" IsHidden="true" />
-            <ControlPoint Id="MGUy3LtjO9tPDllswRJNup" Bounds="886,914" />
-            <Link Id="VgnFFmmHgr4PFPnyu33Wlk" Ids="MPhBrsuDETVNDErn5bF38T,MGUy3LtjO9tPDllswRJNup" />
-            <Pin Id="BK8YsaVPSSJMNUFtqonc0x" Name="Result" Kind="OutputPin" Bounds="898,636" Summary="True if the input body is of the specified shape" />
-            <Link Id="SAJIDlUopW3LD2T5aOIuIh" Ids="MGUy3LtjO9tPDllswRJNup,BK8YsaVPSSJMNUFtqonc0x" IsHidden="true" />
-          </Patch>
-        </Node>
-        <!--
-
     ************************ FilterByTag ************************
 
 -->
-        <Node Name="FilterByTag" Bounds="370,647,176,231" Id="EGljcQoe2ihPv0rSNjIbUD" Summary="From a spread of Body, only returns  those matching the specified Tag" Remarks="Tags are strings">
+        <Node Name="FilterByTag" Bounds="356,428,176,231" Id="EGljcQoe2ihPv0rSNjIbUD" Summary="From a spread of Body, only returns  those matching the specified Tag" Remarks="Tags are strings">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
           <Patch Id="FoYdJRmqT27MzklMCXa4Ju">
-            <Node Bounds="414,687,120,150" Id="EN7YAishqhlOQUaDAt1uX9">
+            <Node Bounds="400,468,120,150" Id="EN7YAishqhlOQUaDAt1uX9">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="OperationCallFlag" Name="Where" />
                 <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -561,10 +483,10 @@
               <Pin Id="OTPcCpbev7cMuqH6SIA2El" Name="Input" Kind="StateInputPin" />
               <Pin Id="M4UpEZBfPnmL7Ao6ha1XD5" Name="Output" Kind="StateOutputPin" />
               <Patch Id="HXImyB2QZbdNzWQ4eYAngL" Name="Predicate" ManuallySortedPins="true">
-                <ControlPoint Id="A5E98ctbbkwMAW86Gc5w7W" Bounds="428,695" />
-                <ControlPoint Id="Jtu3gtGTF34PPmU6YhdegY" Bounds="488,695" />
-                <ControlPoint Id="Csb8vgO2z76NU7RHdRlnww" Bounds="457,830" />
-                <Node Bounds="426,716,34,26" Id="RBqWJFvyLMxN9FpIVmdAzv">
+                <ControlPoint Id="A5E98ctbbkwMAW86Gc5w7W" Bounds="414,476" />
+                <ControlPoint Id="Jtu3gtGTF34PPmU6YhdegY" Bounds="474,476" />
+                <ControlPoint Id="Csb8vgO2z76NU7RHdRlnww" Bounds="443,611" />
+                <Node Bounds="412,497,34,26" Id="RBqWJFvyLMxN9FpIVmdAzv">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Tag" />
@@ -574,7 +496,7 @@
                   <Pin Id="HRjcEmF3JNtMGHUTulJ0nV" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="NKraeIPmw7AOnWg8lPwueC" Name="Tag" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="455,758,48,19" Id="EfVwpoBJTpIOM3xNzb5rcC">
+                <Node Bounds="441,539,48,19" Id="EfVwpoBJTpIOM3xNzb5rcC">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CastAs" />
@@ -584,7 +506,7 @@
                   <Pin Id="GqkYbKmvXSsMWUeXWrDqaw" Name="Result" Kind="OutputPin" />
                   <Pin Id="Up40kMV0GxhP4wUrIY9kLZ" Name="Success" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="455,787,25,19" Id="JAI1YHpKho1O9cO11xZUIZ">
+                <Node Bounds="441,568,25,19" Id="JAI1YHpKho1O9cO11xZUIZ">
                   <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="=" />
@@ -601,7 +523,7 @@
             <Link Id="QUAzHkYyYyVN6ajjGMX70t" Ids="NyFNzNBIXKKNIqJ0qTuLeX,A5E98ctbbkwMAW86Gc5w7W" IsHidden="true" />
             <Link Id="ClSi8kzWN6EMqbGApa9UeV" Ids="CdMdltKdNVsOHZuvMuTLI8,Jtu3gtGTF34PPmU6YhdegY" IsHidden="true" />
             <Link Id="S4CiUNDU0jLM68Qloblx6K" Ids="Csb8vgO2z76NU7RHdRlnww,AXR9HdezN2cPeTHorTmuZ5" IsHidden="true" />
-            <ControlPoint Id="DgQ8BHpRCT9MginvgNgVbY" Bounds="416,665" />
+            <ControlPoint Id="DgQ8BHpRCT9MginvgNgVbY" Bounds="402,446" />
             <Link Id="HoqX1kpwtqaLhMwpeZE2U4" Ids="DgQ8BHpRCT9MginvgNgVbY,OTPcCpbev7cMuqH6SIA2El" />
             <Pin Id="EYsuijxdy6vQSsoQh1raNx" Name="Input" Kind="InputPin" Bounds="473,659" Summary="The spread of Body to filter">
               <p:TypeAnnotation>
@@ -618,7 +540,7 @@
             <Link Id="A1TvuhZIuBhOwxXS5qdKEB" Ids="NKraeIPmw7AOnWg8lPwueC,RDCZbwjDXjUMkIfv4Biwgr" />
             <Link Id="JxQZwvqFcPWOcOY691oY8p" Ids="GqkYbKmvXSsMWUeXWrDqaw,KPbgJBM703jPBTHYqMs0Dc" />
             <Link Id="H1XdLEC8dDaQOpXhO3dpIz" Ids="SRtwjrLkrwHOhfcwAMacbm,V6Kt3dxR2VrOPmtrf3vE7d" />
-            <ControlPoint Id="SRtwjrLkrwHOhfcwAMacbm" Bounds="476,665" />
+            <ControlPoint Id="SRtwjrLkrwHOhfcwAMacbm" Bounds="462,446" />
             <Pin Id="Ormrb3GR5uPN5rCEdkeKM9" Name="Filter" Kind="InputPin" Bounds="563,663" Summary="The tag  to match">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
@@ -626,7 +548,7 @@
             </Pin>
             <Link Id="A9XRFglCYcZP3zGuN7AQPA" Ids="Ormrb3GR5uPN5rCEdkeKM9,SRtwjrLkrwHOhfcwAMacbm" IsHidden="true" />
             <Link Id="BHDm3jUfHvhNBGek3HZjrw" Ids="SI5g3vwp3gYP950XF1K839,Csb8vgO2z76NU7RHdRlnww" />
-            <ControlPoint Id="ESBppBY9wy4NAGK7jVxWrT" Bounds="416,861" />
+            <ControlPoint Id="ESBppBY9wy4NAGK7jVxWrT" Bounds="402,642" />
             <Link Id="PQqYxhUQiUNNlS877GRVsN" Ids="M4UpEZBfPnmL7Ao6ha1XD5,ESBppBY9wy4NAGK7jVxWrT" />
             <Pin Id="CA8TQWWnrsNMm2pJ7oy2eD" Name="Output" Kind="OutputPin" Bounds="479,872" Summary="The filtred spread" />
             <Link Id="AF9gno2B9NTLCS3ywQmOQ0" Ids="ESBppBY9wy4NAGK7jVxWrT,CA8TQWWnrsNMm2pJ7oy2eD" IsHidden="true" />
@@ -638,7 +560,7 @@
     ************************ Body ************************
 
 -->
-      <Node Name="Body" Bounds="339,309" Id="FRJVTKksZAGOf4gzz1w6lE">
+      <Node Name="Body" Bounds="338,322" Id="FRJVTKksZAGOf4gzz1w6lE">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -654,14 +576,14 @@
     ************************ Position ************************
 
 -->
-            <Node Name="Position" Bounds="432,567,182,107" Id="HG5UFCocxcfLqBMr3ofks7">
+            <Node Name="Position" Bounds="49,64,182,107" Id="HG5UFCocxcfLqBMr3ofks7">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="UMEAJgkeUaiLPrPpcey29O">
-                <Node Bounds="444,590,53,26" AutoConnect="true" Id="VZBi1eRFM0YOODBbA5wFsZ">
+                <Node Bounds="61,87,53,26" AutoConnect="true" Id="VZBi1eRFM0YOODBbA5wFsZ">
                   <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Body" LastSymbolSource="Aether.dll">
                     <Choice Kind="OperationNode" Name="Position" />
                     <FullNameCategoryReference ID="Aether.Physics2D.Dynamics.Body" />
@@ -670,7 +592,7 @@
                   <Pin Id="FNQSopQM7ozMGRwZpj16mq" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="H7tVrwDPxKeMmx34jRTr1B" Name="Position" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="492,622,110,19" Id="FTh1SgkvXhmQDqbtjfYGG8">
+                <Node Bounds="109,119,110,19" Id="FTh1SgkvXhmQDqbtjfYGG8">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Utils" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FromAeatherVector2" />
@@ -679,7 +601,7 @@
                   <Pin Id="KTIax1eYPNrLkp0se33TY1" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="N9yQXIkJ6K6P0RrZlxM5xJ" Ids="H7tVrwDPxKeMmx34jRTr1B,KzEUfHoTxLVPv6bX0Vqxp2" />
-                <ControlPoint Id="GnCYgtRvfw0MHoqZLRoN5h" Bounds="494,657" />
+                <ControlPoint Id="GnCYgtRvfw0MHoqZLRoN5h" Bounds="111,154" />
                 <Link Id="ERyDg3eyexANYE9liNly2z" Ids="KTIax1eYPNrLkp0se33TY1,GnCYgtRvfw0MHoqZLRoN5h" />
                 <Link Id="Okcp3N8E9MoPFmKKdsOzJo" Ids="GnCYgtRvfw0MHoqZLRoN5h,Fb3Lc1pqSYKMVPZ0sWuOVh" IsHidden="true" />
                 <Pin Id="TKXBETXDLr8NOiAEUwEU3Q" Name="Input" Kind="InputPin" />
@@ -692,12 +614,12 @@
     ************************ Radius ************************
 
 -->
-            <Node Name="Radius" Bounds="729,490,283,202" Id="Lqt9pKfCuZlOJUudZvgQSk">
+            <Node Name="Radius" Bounds="296,60,283,202" Id="Lqt9pKfCuZlOJUudZvgQSk">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="GurjQPympIjMgVljJLaKg5">
-                <Node Bounds="741,513,64,26" AutoConnect="true" Id="IJYTW5iBzKRO3av5jQrdlo">
+                <Node Bounds="308,83,64,26" AutoConnect="true" Id="IJYTW5iBzKRO3av5jQrdlo">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Vector2Type" Name="Body" />
@@ -707,7 +629,7 @@
                   <Pin Id="KOfGxmj70bUMDHeWYDTApS" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JeqorfBLm2DOXLCnqFZw8l" Name="Fixture List" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="800,560,80,19" Id="GBqVNCRN5JTORVwSeuQjCV">
+                <Node Bounds="367,130,80,19" Id="GBqVNCRN5JTORVwSeuQjCV">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
@@ -718,29 +640,29 @@
                   <Pin Id="OryJT4Wgg2PLgBu4bin9xj" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="RmBwVtRI7QQNOcugHSicq9" Ids="JeqorfBLm2DOXLCnqFZw8l,A2qjgN67vs9LbfaXqUnhY6" />
-                <Node Bounds="875,592,44,26" Id="LWufevHJb4LMoLqZpR99ZW">
-                  <p:NodeReference LastCategoryFullName="2D.Physics.Fixture" LastSymbolSource="VL.2D.Physics.vl">
+                <Node Bounds="442,162,44,26" Id="LWufevHJb4LMoLqZpR99ZW">
+                  <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastSymbolSource="Aether.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="Vector2Type" Name="Fixture" />
                     <Choice Kind="OperationCallFlag" Name="Shape" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Fixture" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="AXdbIjAZfrJPplr6xqR178" Name="Input" Kind="StateInputPin" />
                   <Pin Id="D03cdrCzkNpLNR0MQfNaTD" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="C5ycliJGrRcNGLmjsZCGNT" Name="Shape" Kind="OutputPin" />
                 </Node>
                 <Link Id="Gk83zayZ3xzO8isvT7JlBM" Ids="OryJT4Wgg2PLgBu4bin9xj,AXdbIjAZfrJPplr6xqR178" />
-                <Node Bounds="914,631,47,26" Id="Q3KgTtSQjUfMiiIZozvpkK">
-                  <p:NodeReference LastCategoryFullName="2D.Physics.Shape" LastSymbolSource="VL.2D.Physics.vl">
+                <Node Bounds="481,201,47,26" Id="Q3KgTtSQjUfMiiIZozvpkK">
+                  <p:NodeReference LastCategoryFullName="Aether.Physics2D.Collision.Shapes.Shape" LastSymbolSource="Aether.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="Shape" />
                     <Choice Kind="OperationCallFlag" Name="Radius" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Shape" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="DbydeJZ7UmqMhOwGiDfLKo" Name="Input" Kind="StateInputPin" />
                   <Pin Id="PQgXsZXGuIFOuakdpUVC1X" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="HAaFdm9uWOvPsOKeBHa19l" Name="Radius" Kind="OutputPin" />
                 </Node>
                 <Link Id="BofmFRkRPNLNnqCF1RAkom" Ids="C5ycliJGrRcNGLmjsZCGNT,DbydeJZ7UmqMhOwGiDfLKo" />
-                <ControlPoint Id="HRmzTW9sBNsM3xeDYCxi2Z" Bounds="958,675" />
+                <ControlPoint Id="HRmzTW9sBNsM3xeDYCxi2Z" Bounds="525,245" />
                 <Link Id="TICj8YEbrXhPUck2C34c0d" Ids="HAaFdm9uWOvPsOKeBHa19l,HRmzTW9sBNsM3xeDYCxi2Z" />
                 <Link Id="BtXQzBF37hrOcjjg64ajBE" Ids="HRmzTW9sBNsM3xeDYCxi2Z,ICkHvrFwyDSNJmI5M1D25G" IsHidden="true" />
                 <Pin Id="OGFE2BD5albNP4BDajkT3Y" Name="Input" Kind="InputPin" />
@@ -753,13 +675,13 @@
     ************************ Vertices ************************
 
 -->
-            <Node Name="Vertices" Bounds="433,737,484,512" Id="EfFDAxOVNznMp0bPfvahly">
+            <Node Name="Vertices" Bounds="44,356,483,512" Id="EfFDAxOVNznMp0bPfvahly">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="U49jRKfeZeYL8GItMXS9Qx">
-                <Node Bounds="446,760,64,26" AutoConnect="true" Id="M4Cubp6khLAM0cjS4IjfWc">
+                <Node Bounds="56,379,64,26" AutoConnect="true" Id="M4Cubp6khLAM0cjS4IjfWc">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FixtureList" />
@@ -769,7 +691,7 @@
                   <Pin Id="BMG7oaaicxpOsnkBEjdvB7" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Ct47k51Wx74MlwL47SjRDz" Name="Fixture List" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="505,801,80,19" Id="F4eOR5FVAOiNcqVkxm9Qfr">
+                <Node Bounds="115,420,80,19" Id="F4eOR5FVAOiNcqVkxm9Qfr">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
@@ -780,18 +702,18 @@
                   <Pin Id="SkoSeVfHEr5L0uiMsubG6H" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="Q4BCgCfUin7N4ixJsZApnv" Ids="Ct47k51Wx74MlwL47SjRDz,I9HtOj7vbc2PbbS1LeDKvV" />
-                <Node Bounds="580,836,44,26" Id="M0GFgeY5SzuP5nhLhaV7tQ">
-                  <p:NodeReference LastCategoryFullName="2D.Physics.Fixture" LastSymbolSource="VL.2D.Physics.vl">
+                <Node Bounds="190,455,44,26" Id="M0GFgeY5SzuP5nhLhaV7tQ">
+                  <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Fixture" LastSymbolSource="Aether.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Shape" />
-                    <CategoryReference Kind="Vector2Type" Name="Fixture" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Fixture" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="PLp7zmsLEBKLkJWVz0Edz7" Name="Input" Kind="StateInputPin" />
                   <Pin Id="VOsLR7EDjZtLshxLU0I40I" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="QeS5rgAE4FWN1xuYN0bEn0" Name="Shape" Kind="OutputPin" />
                 </Node>
                 <Link Id="L9boftuiW55McBwqRMLlDE" Ids="SkoSeVfHEr5L0uiMsubG6H,PLp7zmsLEBKLkJWVz0Edz7" />
-                <Node Bounds="619,907,66,26" Id="OLTcm1ykZtWL9m7smdiTZe">
+                <Node Bounds="229,526,66,26" Id="OLTcm1ykZtWL9m7smdiTZe">
                   <p:NodeReference LastCategoryFullName="Aether.Physics2D.Collision.Shapes.PolygonShape" LastSymbolSource="Aether.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="PolygonShape" />
@@ -801,7 +723,7 @@
                   <Pin Id="OEDlwuztDsQPr0Xxei2t5F" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="NqSXSwFc6YZLX39FFIZtzr" Name="Vertices" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="619,875,48,19" Id="HJCakVXIhJAMuDnkX0VPtg">
+                <Node Bounds="229,494,48,19" Id="HJCakVXIhJAMuDnkX0VPtg">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CastAs" />
@@ -813,7 +735,7 @@
                 </Node>
                 <Link Id="LZsaNvsUMS3MkEKP03aKub" Ids="QeS5rgAE4FWN1xuYN0bEn0,PEB8URPMvVMPKwlUmvAV2R" />
                 <Link Id="Hyc74r0zYdSNcUZcJdPoyG" Ids="PoDrhPh2FpHORxv9gL3r0k,A7ygvxlUQHMO5MzVnRFvme" />
-                <Node Bounds="680,947,44,19" Id="SbskyOwKP4RMRtrX581gpN">
+                <Node Bounds="290,566,44,19" Id="SbskyOwKP4RMRtrX581gpN">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Count" />
@@ -823,7 +745,7 @@
                   <Pin Id="FMbnysOCtqcMocs7wHhpv6" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Link Id="GxwHFtfWBMBPIfTJBJzKSM" Ids="NqSXSwFc6YZLX39FFIZtzr,V7t2OkxBNpZNuTJyNokPNk" />
-                <Node Bounds="680,992,225,218" Id="PCmu8hz3MXvNOKqJVpKSLi">
+                <Node Bounds="290,611,225,218" Id="PCmu8hz3MXvNOKqJVpKSLi">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
@@ -837,7 +759,7 @@
                       <Pin Id="HEgEaQmBdMNLpJdHe24k5X" Name="Index" Kind="InputPin" />
                     </Patch>
                     <Patch Id="GrJQcO2GHsOLrBaNAFiqeb" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="692,1025,67,26" Id="OMKjSQ1d4ISMSklvkLNRfK">
+                    <Node Bounds="302,644,67,26" Id="OMKjSQ1d4ISMSklvkLNRfK">
                       <p:NodeReference LastCategoryFullName="Aether.Physics2D.Common.Vertices" LastSymbolSource="Aether.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="Vertices" />
@@ -848,8 +770,8 @@
                       <Pin Id="E7hrOTbwIR3OZrcKeLjmgP" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="CyX4B4qdAR5LsEESZ74rdW" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <ControlPoint Id="JFIui85efl4M18nqyxG99J" Bounds="756,1010" />
-                    <Node Bounds="754,1065,110,19" Id="OsPuJk6IrCBLg3qGaH93HC">
+                    <ControlPoint Id="JFIui85efl4M18nqyxG99J" Bounds="366,629" />
+                    <Node Bounds="364,684,110,19" Id="OsPuJk6IrCBLg3qGaH93HC">
                       <p:NodeReference LastCategoryFullName="2D.Physics.Utils" LastSymbolSource="VL.2D.Physics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="FromAeatherVector2" />
@@ -857,7 +779,7 @@
                       <Pin Id="T9CqkwLgpk4L8082S0fYM4" Name="Input" Kind="InputPin" />
                       <Pin Id="FKwtapciJrxM32zFm0ACCf" Name="Output" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="754,1166,64,19" Id="TJoeQhffKZ6NXTuioyNiey">
+                    <Node Bounds="364,785,64,19" Id="TJoeQhffKZ6NXTuioyNiey">
                       <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="Transform" />
@@ -867,7 +789,7 @@
                       <Pin Id="QErTIzlNuSoOzGJSMjar4N" Name="Transform" Kind="InputPin" />
                       <Pin Id="Ibujkc6t7yEOxm7Jlt51OV" Name="Output" Kind="StateOutputPin" />
                     </Node>
-                    <Node Bounds="813,1131,80,19" Id="OCCcq0vV5VNNHb2IYAEoOp">
+                    <Node Bounds="423,750,80,19" Id="OCCcq0vV5VNNHb2IYAEoOp">
                       <p:NodeReference LastCategoryFullName="2D.Transform" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="TransformSRT" />
@@ -886,7 +808,7 @@
                       <Pin Id="SO8b7T6RP2DMkInXMC58BB" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="Nh80VyXF1ApOnUV3v5rOXG" Bounds="756,1204" Alignment="Bottom" />
+                  <ControlPoint Id="Nh80VyXF1ApOnUV3v5rOXG" Bounds="366,823" Alignment="Bottom" />
                 </Node>
                 <Link Id="TSsmYiJaLrtPCZdTgKGajo" Ids="FMbnysOCtqcMocs7wHhpv6,HgbjXCU5A9JPez5gPMYtbz" />
                 <Link Id="VlIfq6WxLzlPw9OJ3ZnGCF" Ids="NqSXSwFc6YZLX39FFIZtzr,TbAW5wDqbwWNyvfRJpXeXU" />
@@ -894,9 +816,9 @@
                 <Link Id="EIDmQJOhHWfMvjD6D0qmwG" Ids="JFIui85efl4M18nqyxG99J,BPqbZKq3DcILrUhZxHgZJs" />
                 <Link Id="QPkYby3E34OPdZAGjOfNCE" Ids="CyX4B4qdAR5LsEESZ74rdW,T9CqkwLgpk4L8082S0fYM4" />
                 <Link Id="LEtuSCHZN2ZMmMGDSeEtRr" Ids="Nh80VyXF1ApOnUV3v5rOXG,Hj49QT2aY6uLOVshmet3Se" />
-                <ControlPoint Id="Hj49QT2aY6uLOVshmet3Se" Bounds="756,1232" />
+                <ControlPoint Id="Hj49QT2aY6uLOVshmet3Se" Bounds="366,851" />
                 <Link Id="HrVIWxHSGcsL1KbSmYnkXF" Ids="Hj49QT2aY6uLOVshmet3Se,T5XuYOZWlfNO0mUMVsiVSJ" IsHidden="true" />
-                <Node Bounds="446,1012,53,26" AutoConnect="true" Id="P47Rv5aJaimMosr1gVAD3r">
+                <Node Bounds="56,631,53,26" AutoConnect="true" Id="P47Rv5aJaimMosr1gVAD3r">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Position" />
@@ -908,7 +830,7 @@
                 </Node>
                 <Link Id="RXVyghrwxSeO6FLm6oA4ka" Ids="FKwtapciJrxM32zFm0ACCf,JMWCFYvGzrMLpauRtM5CZC" />
                 <Link Id="Twb84RB1HtBPZWVWKVpQgs" Ids="Ibujkc6t7yEOxm7Jlt51OV,Nh80VyXF1ApOnUV3v5rOXG" />
-                <ControlPoint Id="DgaTiHrSIggO3vPAohlICD" Bounds="447,1216" />
+                <ControlPoint Id="DgaTiHrSIggO3vPAohlICD" Bounds="58,700" />
                 <Link Id="VtdQOJum5BTOzuz3X9I1hO" Ids="PvmHcAbWm6iP9FlaQ5dK9J,DgaTiHrSIggO3vPAohlICD" />
                 <Link Id="BQMJRQROtdsLM5R3ccZXCx" Ids="DgaTiHrSIggO3vPAohlICD,RyDXoDal9TcPym83DyktiV" IsHidden="true" />
                 <Pin Id="NqNnvfArS5rPV7S9RWMEk3" Name="Input" Kind="InputPin" Bounds="19,8" />
@@ -916,7 +838,7 @@
                 <Pin Id="RyDXoDal9TcPym83DyktiV" Name="Output" Kind="OutputPin" Bounds="19,22" />
                 <Link Id="FVClnLe7tbcOPIXSqlQhGW" Ids="SO8b7T6RP2DMkInXMC58BB,QErTIzlNuSoOzGJSMjar4N" />
                 <Link Id="TrIr4DQyHv3M7KCnHS0YRe" Ids="NL0K3NecasaP6lUJH1H8K5,GoHa9SxBTxQN2eZfUjPhdt" />
-                <Node Bounds="446,943,54,26" Id="M7websPwEGbLBJ79TkHboB">
+                <Node Bounds="56,562,54,26" Id="M7websPwEGbLBJ79TkHboB">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Rotation" />
@@ -936,14 +858,14 @@
     ************************ Rotation ************************
 
 -->
-            <Node Name="Rotation" Bounds="1033,814,184,103" Id="LDiZblRN6U5LtyRBF2KYa6">
+            <Node Name="Rotation" Bounds="571,359,165,111" Id="LDiZblRN6U5LtyRBF2KYa6">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="BegYBBSXxYyP4Es6rdrJUR">
-                <Node Bounds="1045,837,34,26" AutoConnect="true" Id="PZ0i05Du9oIM2fupmfoGou">
+                <Node Bounds="583,382,54,26" AutoConnect="true" Id="PZ0i05Du9oIM2fupmfoGou">
                   <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.Body" LastSymbolSource="Aether.dll">
                     <Choice Kind="OperationNode" Name="Rotation" />
                     <FullNameCategoryReference ID="Aether.Physics2D.Dynamics.Body" />
@@ -952,7 +874,7 @@
                   <Pin Id="RSd8WL8bAJKMx1vZbqnpnO" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="RqfBF6f6Fv2Pe7VtZsBNf7" Name="Rotation" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1113,858,92,19" Id="ICr7pCXDDq1MV8sj9c3t2V">
+                <Node Bounds="632,419,92,19" Id="ICr7pCXDDq1MV8sj9c3t2V">
                   <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="RadiansToCycles" />
@@ -961,7 +883,7 @@
                   <Pin Id="MSg8FBeTAoxP9v5vveGB4Y" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Link Id="G1rePD0dQeRL77bJzCrx6t" Ids="RqfBF6f6Fv2Pe7VtZsBNf7,FURcO7uFfgyOS2BLndIblM" />
-                <ControlPoint Id="MRODgYmjBKSQRXJ2JWAfpo" Bounds="1114,900" />
+                <ControlPoint Id="MRODgYmjBKSQRXJ2JWAfpo" Bounds="634,453" />
                 <Link Id="GDzwbzmYacTNJqncOW4wml" Ids="MSg8FBeTAoxP9v5vveGB4Y,MRODgYmjBKSQRXJ2JWAfpo" />
                 <Link Id="GSx86AYAhDKLrcIvOUWIci" Ids="MRODgYmjBKSQRXJ2JWAfpo,F3iFITV2XZZQby430ov7hV" IsHidden="true" />
                 <Pin Id="CXKJRErE0K7PDdXFwqgbZj" Name="Input" Kind="InputPin" />
@@ -976,78 +898,6 @@
             <Fragment Id="SzIv5U5aLMsOAnTEReGSFK" Patch="EfFDAxOVNznMp0bPfvahly" />
             <Fragment Id="GrewHV2djhmNB3sDkMwIoX" Patch="LDiZblRN6U5LtyRBF2KYa6" />
           </ProcessDefinition>
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Fixture ************************
-
--->
-      <Node Name="Fixture" Bounds="339,366" Id="Ekox0RK6CEaMZIKqllG3jv">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="Aether.Physics2D.Dynamics" LastSymbolSource="Aether.dll">
-          <Choice Kind="TypeFlag" Name="Fixture" />
-        </p:TypeAnnotation>
-        <Patch Id="My209gfD4yvMCsRWVKYUHn">
-          <Canvas Id="N8rpmygDCTDPlBn5Oca7Zo" CanvasType="Group" />
-          <ProcessDefinition Id="N08tc3YXVKmNKWHaxbUYCS" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ Shape ************************
-
--->
-      <Node Name="Shape" Bounds="476,261" Id="HhvhBGIjO0WPVsUDCmUe8V">
-        <p:NodeReference>
-          <Choice Kind="ForwardDefinition" Name="Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="Aether.Physics2D.Collision.Shapes" LastSymbolSource="Aether.dll">
-          <Choice Kind="TypeFlag" Name="Shape" />
-        </p:TypeAnnotation>
-        <Patch Id="OHKjztP6aljLlcgFiJAbCL">
-          <Canvas Id="Oiu9J1rxF1OOV1IYd0C0Q9" CanvasType="Group" />
-          <ProcessDefinition Id="EP6ZQ1JKSLxLlg1pUuXBcX" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ BodyType ************************
-
--->
-      <Node Name="BodyType" Bounds="476,366" Id="As67ujT45iRNJLXE35jHpc">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="Aether.Physics2D.Dynamics" LastSymbolSource="Aether.dll">
-          <Choice Kind="TypeFlag" Name="BodyType" />
-        </p:TypeAnnotation>
-        <Patch Id="IVFAEMjz5V0LOcgtWmOhEv">
-          <Canvas Id="DyuRy77Pho3QbyQkHOQWsQ" CanvasType="Group" />
-          <ProcessDefinition Id="S8IPMHeswiuOiZQvKnsNAz" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ ShapeType ************************
-
--->
-      <Node Name="ShapeType" Bounds="476,309" Id="TUrvwgTC4kRLo8Wg6e70Rl">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="Aether.Physics2D.Collision.Shapes" LastSymbolSource="Aether.dll">
-          <Choice Kind="TypeFlag" Name="ShapeType" />
-        </p:TypeAnnotation>
-        <Patch Id="MkEeJ5RrSM5QaE74alo1vK">
-          <Canvas Id="UrBn0kd7nwMNHMhUi5cTgl" CanvasType="Group" />
-          <ProcessDefinition Id="U717Mgxj0UjN0fA9OoEZLS" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
