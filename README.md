@@ -36,10 +36,6 @@ _.NET libraries might return types that are not convenient for us to use in VL. 
 - The GeometryTools nuget has a `IsPointOnLineSegment` operation, but its input are not compatible with our Vector2 IOBoxes
 - Let's create a wrapper node that takes care of the type conversion
 
-##### Questions
-- Better way to find about the Vector that the lib uses?
-    - Full namespace on the tooltip ?
-
 #### Hands on : ColorThief
 - Open the example patch : we want to retrieve a color palette from an image.
 - After looking around on the net, we find the [ColorThief](https://www.nuget.org/packages/ksemenenko.ColorThief/) library that seems to do what we want.
@@ -69,14 +65,13 @@ _Some .NET libraries might in turn use libraries themselves. Sometimes, those li
 - Sadly, the node throws an error message, it looks like it cannot find a dependency.
 - Let's create a bat file that adds our nuget's native dependency to gamma's search path and restart gamma : alles gut now, we can patch!
 
-## 3. Create a wrapper lib : VaderSharp
+## 3. Create a wrapper lib
 _We now know how to use existing nugets and tailors them for further usage in a VL patch. But how could we build re-usable blocks that are not tied to the project we're working on? Here we'll see how we can create our own VL library._
 
-#### Hands on : 
-- Advantage : you just need to ref a single VL doc to use your wrapper
-- Let's see how we can structure that document, how it ends up in the nodebrowser
-- Good practices : do not expose uncommon datatypes such as float64 or MutableList<T>
-- Briefly talk about documentation (CTRL+M, help patches)
-
-##### Questions
-- Mutable and Forward All checked by default ?
+#### Hands on : AetherPhysics
+- We'll start by downloading the `Aether.Physics2D.NetStandard`package
+- Then, we'll create a new document named `VL.2d.Physics` : just by referencing this VL doc in our project, we'll have access to all the features of the physics library
+- Now we'll need to forward Classes, it means that our `VL.2d.Physics` document will then expose those classes to the other documents that are referencing it
+- We'll need to adapt a few things : create conversion operation for Vectors, change `MutableList<T>` to `Spread<T>`, etc
+- Now, let's create a document that has a reference to our `VL.2d.Physics` document : see how the forwarded class appear in the node browser
+- Let's write some documentation for the utils we've created
