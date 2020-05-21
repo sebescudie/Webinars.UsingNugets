@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VOD1lX4PyOsOVCheAAMSwX" LanguageVersion="2020.1.1.97" Version="0.128">
-  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+<Document xmlns:p="property" Id="VOD1lX4PyOsOVCheAAMSwX" LanguageVersion="2020.1.1.108" Version="0.128">
+  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.1.1" />
   <Patch Id="B49oQkJgJtzLYKf5LRsNQf">
     <Canvas Id="E2DcNWZbgrhNH8qgF3joQS" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -326,7 +326,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImageReader" />
             </p:NodeReference>
-            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="assets\flower four.jpg">
+            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="..\assets\flower four.jpg">
               <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
               </p:TypeAnnotation>
@@ -344,7 +344,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="275,496,103,19" Id="HoUOxmGIt1XNpys8wH2K7L">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="2.4 - Extract Colors From An Image Solution.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="2.1.4 - Incomptable Types 2 Solution.vl">
               <Choice Kind="ProcessNode" Name="ExtractColorPalette" />
             </p:NodeReference>
             <Pin Id="SGe7A4B9z5JMupAqQ5hCuG" Name="Input" Kind="InputPin" />
@@ -427,6 +427,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.1.1" />
   <NugetDependency Id="EFj9MbqE5LVNkC1xAWvvYp" Location="ksemenenko.ColorThief" Version="1.1.1.4" />
 </Document>
