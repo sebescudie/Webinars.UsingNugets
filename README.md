@@ -1,34 +1,82 @@
-# NODE20.Nuget
+# Nugets Workshop
+_One massive feature of VL is its ability to consume almost any .NET nuget and turn it into nodes. As patchers, this gives us access to thousands of libraries to solve our problems. Sometimes though, those libraries might not exactly fit the approach we're used to from visual programming : taken out of the box, nodes can use exotic types, or simply be way too complicated to use in a high-level dataflow approach._
 
-_This repo will collect ideas, patches and directions for a workshop about Nuget related stuff @NODE20._
+_In this workshop, we'll learn what is the nuget ecosystem, and with hands-on examples, download nugets and make them fit our patching habits._
 
-## Repo structure
+## 1️. Introduction
+_We'll learn what is the nuget ecosystem, and how a plugin in structured._
 
-For now, ideas can be collected and discussed in the Issues or the Projects pages. The README just presents the global directions for the workshop, further details will be found in the repo itself.
+### NuGet ecosystem
+- Think of nuget as a database for .NET libraries (similar to JS' `npm` or python's `pip`)
+- Those nugets come in `.dll` format, and can be used with any language of the .NET framework (C# and VB, and now VL !)
+    - As C# or VB, VL is a language for the .NET framework
 
-## Warum the name?
+#### Things to do :
 
-This workshop should address the two differents aspects of working with nugets in VL :
+- Open the Nuget Gallery
+- Browse, show a nuget page
+- Explain the "structure" of the nuget page
 
-- Importing and using existing C# libraries
-- Creating VL plugins around existing C# libraries (whether they come from nuget or written by the user him/herself)
+### Small demo : String.Extensions
+- Let's install [StringExtensionsLibrary](https://www.nuget.org/packages/StringExtensionsLibrary/), a convenience nuget that contains many functions that allow us to do string manipulations
+- We read the [Github descriptions](https://github.com/timothymugayi/StringExtensions), and see many usefull functions that could be usefull in our patches
+- We install the nuget, reference it in our patch, and new category shows up in the node browser
+- Let's look at the node browser and the Github page side by side : that's a match !
+- Let's use a cool node and see it works instantly in our dataflow approach
 
-## Workshop format
+## 2. Tailoring a nuget for VL usage
+_Coming from the textual programming world, nugets might not always fit our patching habits out of the box. In this section, we'll se how we can overcome those problems and wrap .NET libs to make them patch-friendly._
 
-It's not clear yet how this workshop is going to be structured. Should it be split into two different ones? What's the part of "hands-on" stuff versus pure "lecture" stuff? A first approach would be :
+### Incompatible types
+_.NET libraries might return types that are not convenient for us to use in VL. Sometimes, they're not even compatible, even though they have the same name. Let's see how we can overcome that._
 
-### Beginner level : consume C# libraries
+#### Hands on : GeometryTools
+- Open the example patch : we want to color a line when the circle intersects it.
+- After some searching, we've found [this nuget](https://www.nuget.org/packages/GeometryTools/)
+- The GeometryTools nuget has a `IsPointOnLineSegment` operation, but its input are not compatible with our Vector2 IOBoxes
+- Let's create a wrapper node that takes care of the type conversion
 
-Duration : 3 hours
+##### Questions
+- Better way to find about the Vector that the lib uses?
+    - Full namespace on the tooltip ?
 
-No (or few) programming concepts involved, just evoking with high-level terms what is a library (a nuget), where you find one and how you can _instantly_ use one in your project.
+#### Hands on : ColorThief
+- Open the example patch : we want to retrieve a color palette from an image.
+- After looking around on the net, we find the [ColorThief](https://www.nuget.org/packages/ksemenenko.ColorThief/) library that seems to do what we want.
+- Let's look at the code example provided on the [repo](https://github.com/KSemenenko/ColorThief)
+- We install it, find the `GetPalette` node, but its inputs are not that VL friendly...
+    - The node turns pink : it's a warning
+- We create a wrapper node that takes care of making it more suited for our patching life
+- Let's expose the color count and give it a default value
+- Mention the fact that nodes must always return a Spread.
 
-- Hands-on : start with a defined need. For instance, "we want to make this project that does this and that, but this specific feature is not available in VVVV". We look at what's available on the internet, install it and solve our problem. Mention (or even figure out a specific case to illustrate) that some libraries are not suited for dataflow, and require some adaptation to work in vvvv.
-- Lecture : after this is done and that we've seen that we have solved our issues, just give some background information on the structure of a dll : the fact that it contains functions and types (don't talk about classes), and that those functions and types turn to nodes and categories when they're imported in vvvv.
+### Events
+- Most .NET libs will return a Task<T>, let's convert it to an Observable
+- Show EnventPattern stuff
+- Something that reacts to web input
+    - Mastodon ?
+    - Twitter ?
 
-### Hardcore level : create a VL Package
+https://github.com/tainicom/Aether.Physics2D
 
-We assume people are totaly familiar with C# libraries, what a `.dll` is and how libraries can rely on each other. This one would more focus on curating a lib for VL usage, and publish a fully fledged package (available on nuget, with help patches and stuff).
+### Unmanaged dependencies
+_Some .NET libraries might in turn use libraries themselves. Sometimes, those libraries are not written in C# but rather in an unmanaged language such as C++. Those are called "native dependencies". For quite some time, there was no clear recommandation for nuget packages as where to put those native dependencies : anyone could come up with their own folder structure. As a result, gamma won't be able to pick those up automatically : we have to explicitely tell it where to look for those dlls._
 
-- Lecture : a reminder of vvvv gamma's conventions (avoid as much as possible types like `float64`, `MutableList<T>` and so on). This leads to explain what forwarding is, and how this allows to curate nodes for vvvv (conventions + dataflow paradigm). Also, explain stuff about help flags and the help browser, and how/why patches end up there.
-- Hands on : we take a cool nuget and make a fully fledged vvvv package out of it.
+#### Hands on : DupImageLib
+- Check the example patch : we want to calculate some similarity score between two images.
+- Again, after digging the internets, we find this [DupImageLib](https://www.nuget.org/packages/DupImageLib/) library that performs perceptual hashing.
+- Let's look at the code example provided on [the repo](https://github.com/Quickshot/DupImageLib)
+- Sadly, the node throws an error message, it looks like it cannot find a dependency.
+- Let's create a bat file that adds our nuget's native dependency to gamma's search path and restart gamma : alles gut now, we can patch!
+
+## 3. Create a wrapper lib : VaderSharp
+_We now know how to use existing nugets and tailors them for further usage in a VL patch. But how could we build re-usable blocks that are not tied to the project we're working on? Here we'll see how we can create our own VL library._
+
+#### Hands on : 
+- Advantage : you just need to ref a single VL doc to use your wrapper
+- Let's see how we can structure that document, how it ends up in the nodebrowser
+- Good practices : do not expose uncommon datatypes such as float64 or MutableList<T>
+- Briefly talk about documentation (CTRL+M, help patches)
+
+##### Questions
+- Mutable and Forward All checked by default ?
