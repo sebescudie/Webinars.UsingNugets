@@ -24,7 +24,7 @@
     ************************ Create ************************
 
 -->
-            <Node Name="Create" Bounds="234,509,117,109" Id="HJEFMbLFBPAQNcyRqQzH5K">
+            <Node Name="Create" Bounds="234,509,117,109" Id="HJEFMbLFBPAQNcyRqQzH5K" Summary="Instantiates a world">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -61,7 +61,7 @@
     ************************ AddRectangle ************************
 
 -->
-            <Node Name="AddRectangle" Bounds="624,466,281,402" Id="G01LaYQQVOJLL0Q6PEtk9P">
+            <Node Name="AddRectangle" Bounds="624,466,281,402" Id="G01LaYQQVOJLL0Q6PEtk9P" Summary="Adds a rectangle to the world">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -205,7 +205,7 @@
     ************************ BodyList ************************
 
 -->
-            <Node Name="BodyList" Bounds="419,511,156,119" Id="DukDLzvRVLEOunOzIUJC9M">
+            <Node Name="BodyList" Bounds="419,511,156,119" Id="DukDLzvRVLEOunOzIUJC9M" Summary="Retrieves all bodies from the world">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -244,14 +244,14 @@
     ************************ AddCircle ************************
 
 -->
-            <Node Name="AddCircle" Bounds="957,507,212,392" Id="HVXQFF53JCyQIlK0WbsTgc">
+            <Node Name="AddCircle" Bounds="981,478,212,392" Id="HVXQFF53JCyQIlK0WbsTgc" Summary="Adds a circle to the world">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="LANwyOnj7BAMX5mqVo8kQd" ManuallySortedPins="true">
-                <Node Bounds="970,585,85,26" AutoConnect="true" Id="C4ugitzx3xFOXZC42GUYDW">
+                <Node Bounds="994,556,85,26" AutoConnect="true" Id="C4ugitzx3xFOXZC42GUYDW">
                   <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastSymbolSource="Aether.dll">
                     <Choice Kind="OperationNode" Name="CreateCircle" />
                     <FullNameCategoryReference ID="Aether.Physics2D.Dynamics.World" />
@@ -264,7 +264,7 @@
                   <Pin Id="Okk2VBorYKtQACRlH6DuNL" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="LfBMeeXZvdcLtZnRs5RUwl" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1030,549,93,19" Id="HMebGsItCXZLH2clSXd0LZ">
+                <Node Bounds="1054,520,93,19" Id="HMebGsItCXZLH2clSXd0LZ">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Utils" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToAetherVector2" />
@@ -272,11 +272,11 @@
                   <Pin Id="UewV3jcWIVcQDF0IGFZM4E" Name="Input" Kind="InputPin" />
                   <Pin Id="NIZGBMsnjnFOyWOkPUu1Gs" Name="Output" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="D8ov6Q2IhK4PkGATg5G2yk" Bounds="1032,525" />
+                <ControlPoint Id="D8ov6Q2IhK4PkGATg5G2yk" Bounds="1056,496" />
                 <Link Id="IJlpzDXvIFhOhBnwgcfXsL" Ids="D8ov6Q2IhK4PkGATg5G2yk,UewV3jcWIVcQDF0IGFZM4E" />
                 <Link Id="GFGnGwDftJzL8EeXU3NFpI" Ids="VeSgSLrQbSsObUYrA3cWVO,D8ov6Q2IhK4PkGATg5G2yk" IsHidden="true" />
                 <Link Id="Tm6PlXyLLGAQVOKB8vwZgK" Ids="NIZGBMsnjnFOyWOkPUu1Gs,CI4f7sWbgvhPdjOWMBQuZ1" />
-                <Node Bounds="1050,630,47,26" AutoConnect="true" Id="CNCvtnmjXTwQGGoZbVML8d">
+                <Node Bounds="1074,601,47,26" AutoConnect="true" Id="CNCvtnmjXTwQGGoZbVML8d">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetTag" />
@@ -286,11 +286,11 @@
                   <Pin Id="TLwMeaYVgXgO6XcANdZkhY" Name="Value" Kind="InputPin" />
                   <Pin Id="LsOfNMX3r8XNGivEVwQSjQ" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <ControlPoint Id="DClPx93PO1kNU6kwhI04uk" Bounds="1094,613" />
+                <ControlPoint Id="DClPx93PO1kNU6kwhI04uk" Bounds="1118,584" />
                 <Link Id="RgaYeasDWpcMyzUbgV9WAu" Ids="DClPx93PO1kNU6kwhI04uk,TLwMeaYVgXgO6XcANdZkhY" />
                 <Link Id="GboVzGpobQzMt3r9RhkLfN" Ids="VO5PX2BXxLEQLcv9InRIjf,DClPx93PO1kNU6kwhI04uk" IsHidden="true" />
                 <Link Id="BhJgPneL1tiPPu7S3ypBmb" Ids="LfBMeeXZvdcLtZnRs5RUwl,FbKDOYeuXnFPrIG9LdxV2j" />
-                <Node Bounds="969,853,37,26" AutoConnect="true" Id="AIaRGT6sfUXN8E02ewitSN">
+                <Node Bounds="993,824,37,26" AutoConnect="true" Id="AIaRGT6sfUXN8E02ewitSN">
                   <p:NodeReference LastCategoryFullName="Aether.Physics2D.Dynamics.World" LastSymbolSource="Aether.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="World" />
@@ -302,7 +302,7 @@
                   <Pin Id="IEMjXwEwAFML0vikZgPVaq" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Link Id="Tp57zt7q1F4QNvq71KExNs" Ids="Okk2VBorYKtQACRlH6DuNL,H8d71QLSyK3MIL1qDbBsn5" />
-                <Node Bounds="1050,682,79,26" AutoConnect="true" Id="K4YyjWOC3XCPDbIHZ3EdJ3">
+                <Node Bounds="1074,653,79,26" AutoConnect="true" Id="K4YyjWOC3XCPDbIHZ3EdJ3">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Vector2Type" Name="Body" />
@@ -313,7 +313,7 @@
                   <Pin Id="Av5cl82IMqLNUitu6n0HBy" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Link Id="OX1zk26CJ5EMv2cdILXZcx" Ids="LsOfNMX3r8XNGivEVwQSjQ,HGCLqQe8CycOhzXuzjvw2e" />
-                <Node Bounds="1050,799,53,26" AutoConnect="true" Id="UxALWwu1yiENVjAqehlKPq">
+                <Node Bounds="1074,770,53,26" AutoConnect="true" Id="UxALWwu1yiENVjAqehlKPq">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Vector2Type" Name="Body" />
@@ -324,10 +324,10 @@
                   <Pin Id="APcNSmLDG7JNYTSPtzRDHC" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Link Id="CWhz6Bt9WVVLKZ2PbcygpV" Ids="APcNSmLDG7JNYTSPtzRDHC,CWuHJhriM9PPiUJQFnjAT5" />
-                <ControlPoint Id="IFaZXq5ve8sLz6Emr0ktOl" Bounds="1100,787" />
+                <ControlPoint Id="IFaZXq5ve8sLz6Emr0ktOl" Bounds="1124,758" />
                 <Link Id="Asp8GN9hPq4MmgBnsFM9hG" Ids="IFaZXq5ve8sLz6Emr0ktOl,F1eoNzC2fvTOmWDT8Sj6Pf" />
                 <Link Id="RMVbHN3YIwxNz9yhTXFz2I" Ids="M0HgWVn1AGqQbNMuurwRQy,IFaZXq5ve8sLz6Emr0ktOl" IsHidden="true" />
-                <Node Bounds="1050,736,64,26" AutoConnect="true" Id="FEHa4q7Ow8DOIvHxJxKTDi">
+                <Node Bounds="1074,707,64,26" AutoConnect="true" Id="FEHa4q7Ow8DOIvHxJxKTDi">
                   <p:NodeReference LastCategoryFullName="2D.Physics.Body" LastSymbolSource="VL.2D.Physics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SetFriction" />
@@ -339,7 +339,7 @@
                 </Node>
                 <Link Id="NUtWKZgwqbvNeiqJsItdMI" Ids="Av5cl82IMqLNUitu6n0HBy,DB4VC30WDzwOOoYkDqiyIY" />
                 <Link Id="K6NWpUAU0ifQRsn2SBmbIF" Ids="L1yLP07OHyMQdsW6YvPEaY,RPhuxu2rGsDPVHKD40Ogtb" />
-                <ControlPoint Id="QhctW5CP9PpPgy2gM3tnt9" Bounds="1111,721" />
+                <ControlPoint Id="QhctW5CP9PpPgy2gM3tnt9" Bounds="1135,692" />
                 <Link Id="R4adfCM6vGuPf4Eaqj8ITv" Ids="QhctW5CP9PpPgy2gM3tnt9,Gg0tUYE1RxSLjDM8tnP3kT" />
                 <Link Id="RhA8jpsITL1LkQs00shxB5" Ids="TYV1gVyD4CELRzHyr6t37b,QhctW5CP9PpPgy2gM3tnt9" IsHidden="true" />
                 <Pin Id="RQNBw8BEOM7OJmOGW4wI6Z" Name="Input" Kind="InputPin" Bounds="19,8" />

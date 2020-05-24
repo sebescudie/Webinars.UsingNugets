@@ -242,7 +242,7 @@
             <Pin Id="OzjLZjxJhv8L1Tz4WbqtG8" Name="Right Pressed" Kind="OutputPin" />
             <Pin Id="FAkDMZk2VIOQUweP5YQcxA" Name="WheelDelta" Kind="OutputPin" />
           </Node>
-          <Node Bounds="144,359,206,162" Id="OGUHFSPGOP1QMlx1VfLJyn">
+          <Node Bounds="144,358,289,163" Id="OGUHFSPGOP1QMlx1VfLJyn">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -308,6 +308,11 @@
               <Pad Id="NKdzxupUZYgLtxYI7RUJ1w" Comment="Friction" Bounds="238,415,35,15" ShowValueBox="true" isIOBox="true" Value="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="TEH8hnblBy8NiglpUvOBIO" Comment="Tag" Bounds="347,434,35,15" ShowValueBox="true" isIOBox="true" Value="Circle">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
             </Patch>
@@ -484,6 +489,16 @@
             <Pin Id="FZxyP1Ei5IgOauVYk44Wes" Name="Show Helpers" Kind="InputPin" />
             <Pin Id="TbAe06JNnwlN3oJJD5vf0P" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="MppX647lnRCOdrObbi2rnT" Comment="Tag" Bounds="349,117,35,15" ShowValueBox="true" isIOBox="true" Value="Static">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UWzzBAyWqWUM4vTcnPu05i" Comment="Tag" Bounds="350,158,35,15" ShowValueBox="true" isIOBox="true" Value="Static">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="U6bQ0VfhHs4L7gnA3S9EUg" Name="Create" ParticipatingElements="Fj2eExOdUEnL3fqHJd4RIT" />
         <Patch Id="TOxU7lelMykNEVX0Pk4DQv" Name="Update" ParticipatingElements="D65gOOjjnsyQJ3TIWo48q7,Cg3o0TRxpB4PfTBNY6dbDV,TF5M1vt5E9KMfMGmu1CFDk" />
@@ -531,6 +546,9 @@
         <Link Id="GErwYRdaWMnLjca1QhM3XG" Ids="EAzvEEl7ZvHLEvJuODDHDj,B0y8LmY4nUSP3UnMHtmjKZ" />
         <Link Id="Hy7e5y30tkNPbmkTyOrBVm" Ids="Ki6aKAsXrQwPDgQa0y9ggW,OAPQK15e1pDPTBUHcwkHdJ" />
         <Link Id="RJ58QBDweqQPmbL19eRwt2" Ids="TbAe06JNnwlN3oJJD5vf0P,IsLaRCGYgVONyea3l5ICC7" />
+        <Link Id="FC4PuJyt0HxPgM4gnOvt6U" Ids="MppX647lnRCOdrObbi2rnT,AQobYWGRFXJNPrd1PZ6Nqs" />
+        <Link Id="I1viW2p5RaoNWMtvBL8SgM" Ids="UWzzBAyWqWUM4vTcnPu05i,CvhxYHRDXFhLtNCVSpiiKm" />
+        <Link Id="MXqFujCcm02PQn90q55HGB" Ids="TEH8hnblBy8NiglpUvOBIO,C0tnjgKG5LQNq6c7nC9wEw" />
       </Patch>
     </Node>
   </Patch>
