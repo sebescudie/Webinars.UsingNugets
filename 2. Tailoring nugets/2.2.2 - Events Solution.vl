@@ -518,7 +518,7 @@
             <Pin Id="PTlfAviiBrxLykHUQUDGr6" Name="Update" Kind="InputPin" />
             <Pin Id="HNfmQJ8rHUTNWvAAZC6MjI" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="118,343,85,26" Id="NGdAU8syfEhNBbDZzILPMq">
+          <Node Bounds="118,373,85,26" Id="NGdAU8syfEhNBbDZzILPMq">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
@@ -531,10 +531,10 @@
             <Pin Id="DBKqEQcxxVvOauOd3J7AF1" Name="Max Temperature" Kind="OutputPin" />
             <Pin Id="R81auBinWG5PUYuMwyW7W2" Name="Min Temperature" Kind="OutputPin" />
           </Node>
-          <Pad Id="MFJVFZUpQrGNFxT0fKCT84" Comment="Weather Description" Bounds="140,408,105,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="CWE2qORC20ZNoKkD2a6ZJO" Comment="Current Temperature" Bounds="160,428,56,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="AWfk2mMT9OHLyl02ymRdpZ" Comment="Max Temperature" Bounds="179,448,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Kkmc2bKMXnSO2EYRkvXdke" Comment="Min Temperature" Bounds="200,470,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MFJVFZUpQrGNFxT0fKCT84" Comment="Weather Description" Bounds="140,453,105,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CWE2qORC20ZNoKkD2a6ZJO" Comment="Current Temperature" Bounds="160,473,56,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AWfk2mMT9OHLyl02ymRdpZ" Comment="Max Temperature" Bounds="179,493,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Kkmc2bKMXnSO2EYRkvXdke" Comment="Min Temperature" Bounds="200,515,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="R4r65le1CSJLQK6RgUVSxw" Comment="API Key" Bounds="120,170,212,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -558,8 +558,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UaDK3hU1gfNQQGAXRrVOdg" Comment="City Name" Bounds="120,388,103,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="404,343,55,19" Id="JrXHAPUR2ZCLGSxicJdh9k">
+          <Pad Id="UaDK3hU1gfNQQGAXRrVOdg" Comment="City Name" Bounds="120,433,103,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="416,367,55,19" Id="JrXHAPUR2ZCLGSxicJdh9k">
             <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -567,7 +567,16 @@
             <Pin Id="UZRPDK53ZdMMwCJkWGr2zu" Name="Input" Kind="InputPin" />
             <Pin Id="H8D0KaBguh8OUElLDWL7EM" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="JR0mBtee0QEMY2vZFiE8gu" Comment="" Bounds="406,388,158,94" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JR0mBtee0QEMY2vZFiE8gu" Comment="" Bounds="418,412,158,94" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RGy4KffOVcMNO9KaNrVuwO" Bounds="424,269,198,66" ShowValueBox="true" isIOBox="true" Value="the whole procedure to retrieve weather data is wrapped in this node">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="DlVTcSkaVymQWHnOPWqT3f" Name="Create" />
         <Patch Id="KHxNMs4cKGLN6gNdQwLo6v" Name="Update" />
