@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="S5Ab4IP2Sd4MDhGldfNTqW" LanguageVersion="2020.1.1.108" Version="0.128">
+  <NugetDependency Id="V1K3g0RQJjXPHrtLrMj3Yp" Location="VL.CoreLib" Version="2020.1.1" />
+  <Patch Id="HOspomm65hcLcZBXoyaWgl">
+    <Canvas Id="H9cY7HKPP52LOGmaB5GgYd" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="ItryUOHblUKLEIltR2zuhH">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NhEA5iHvvOrNYAPGI1TTos">
+        <Canvas Id="RKBj1i7VS3jNNsoRVnRlps" CanvasType="Group">
+          <Pad Id="Bn4uuoP2hlNP4xVv33UeQE" Bounds="65,145,468,46" ShowValueBox="true" isIOBox="true" Value="We'd like to retrieve realtime weather data (weather description, and current/min/max temperatures).">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="DvksRjRD7OjLuosZMkoHGe" Name="Create" />
+        <Patch Id="J7Pi8twm1qZMQ1MgEaT998" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="Scr5Ukg5BtsMRRJpN3m4Qg">
+          <Fragment Id="D8WGwz6n9BJLMi4Gl3bl9B" Patch="DvksRjRD7OjLuosZMkoHGe" Enabled="true" />
+          <Fragment Id="VmqUkjzMyEXPF0fLwrLtJU" Patch="J7Pi8twm1qZMQ1MgEaT998" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Lg58MrNkSsIQbmLTv0esrC" Location="VL.Skia" Version="2020.1.1" />
+</Document>
