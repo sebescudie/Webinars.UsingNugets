@@ -47,13 +47,15 @@ _.NET libraries might return types that are not convenient for us to use in VL. 
 - Mention the fact that nodes must always return a Spread.
 
 ### Events
-- Most .NET libs will return a Task<T>, let's convert it to an Observable
-- Show EnventPattern stuff
-- Something that reacts to web input
-    - Mastodon ?
-    - Twitter ?
+_There are many ways in C# to express the concept of events. In VL, the prefered paradigm is Observables. If a plugin uses the [.NET Core Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events), VL automatically converts it to an Observable. There are other cases though where we'll need to adapt the nodes so we can cosume them._
 
-https://github.com/tainicom/Aether.Physics2D
+#### Hands on : OpenWeatherMap.Standard
+- We want to retrieve some real-time weather data from a specific city. After digging, we find the [OpenWeather.Standard](https://www.nuget.org/packages/OpenWeatherMap.Standard/) nuget that allows us to easily use the Open Weather API.
+- We go on the [Open Weather](https://openweathermap.org/guide) website to generate an API key
+- We install the nuget and reference it in our doc
+- The lib's repo does not show any code example. Let's look at the [test files](https://github.com/vb2ae/OpenWeatherMap.Standard/blob/master/OpenWeatherMap.Standard.Test/CityNameTests.cs) to see how we can use the lib.
+
+
 
 ### Unmanaged dependencies
 _Some .NET libraries might in turn use libraries themselves. Sometimes, those libraries are not written in C# but rather in an unmanaged language such as C++. Those are called "native dependencies". For quite some time, there was no clear recommandation for nuget packages as where to put those native dependencies : anyone could come up with their own folder structure. As a result, gamma won't be able to pick those up automatically : we have to explicitely tell it where to look for those dlls._
