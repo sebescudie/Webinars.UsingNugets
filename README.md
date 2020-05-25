@@ -15,7 +15,7 @@ There are three ways to get new nodes in VL :
 ### GAC
 
 - .NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
-- Let's press CTRL+SHIFT+J and look for the `mscorlib` and `System` libs
+- Let's press CTRL+SHIFT+E and look for the `mscorlib` and `System` libs
 - Let's create a few nodes : `Is64BitOperatingSystem`, `Is64BitsProcess`, `MachineName`, and so forth
 - We can have documentation about those on [the MSDN website](https://docs.microsoft.com/en-us/dotnet/api/system.environment.is64bitoperatingsystem?view=netcore-3.1)
 
