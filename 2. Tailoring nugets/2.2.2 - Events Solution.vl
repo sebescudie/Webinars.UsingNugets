@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="Jq3b1gVhVH4LPr2gpBfvNf">
           <Canvas Id="A4IOVbdbgxWMEEBF1fr8KQ" CanvasType="Group">
-            <Node Bounds="347,381,46,26" Id="SqoHVG3iFwtMlFveMwqptz">
+            <Node Bounds="96,90,46,26" Id="SqoHVG3iFwtMlFveMwqptz">
               <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Current" LastSymbolSource="OpenWeatherMap.Standard.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="OpenWeatherMap" />
@@ -25,8 +25,8 @@
               <Pin Id="K4m05fW0dTZOaq21mSKB6L" Name="_app Id" Kind="InputPin" />
               <Pin Id="Nvf8utwN0EBO5pGhtQXelW" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="Fozi3GbRLIEMMFIBw0P51h" SlotId="J2tD0v7umLrOrF8hB6VFjz" Bounds="349,428" />
-            <Node Bounds="459,479,241,109" Id="VX2RiUJ0kyzMJWQHBDSBUI">
+            <Pad Id="Fozi3GbRLIEMMFIBw0P51h" SlotId="J2tD0v7umLrOrF8hB6VFjz" Bounds="98,179" />
+            <Node Bounds="161,286,241,109" Id="VX2RiUJ0kyzMJWQHBDSBUI">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -38,7 +38,7 @@
               <Patch Id="HD8no8UqpsGLxEeovu1sVv" ManuallySortedPins="true">
                 <Patch Id="AhzgEIIyOlkLxMP5DbK99Z" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="UmUMXhgY6SkNx6IhNnZriy" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="471,502,143,26" Id="D0Ig3820LVFLPqZDfEjBre">
+                <Node Bounds="173,309,143,26" Id="D0Ig3820LVFLPqZDfEjBre">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Current" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Current" />
@@ -54,7 +54,7 @@
                   <Pin Id="FMLFauSp8NYQTOn8fcpdM7" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="BwesngptXlMLpOaMkB3NDP" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="609,542,79,26" Id="PhA1Q6x8vx5LNO9eG8wb0x">
+                <Node Bounds="311,349,79,26" Id="PhA1Q6x8vx5LNO9eG8wb0x">
                   <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToObservable" />
@@ -64,13 +64,13 @@
                   <Pin Id="JOzxQ7e60FROcDmW0oBYxc" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="OWxVGSNBXBqNeAW3t8tOiW" Bounds="611,580" Alignment="Bottom" />
+              <ControlPoint Id="OWxVGSNBXBqNeAW3t8tOiW" Bounds="313,389" Alignment="Bottom" />
             </Node>
-            <ControlPoint Id="SeRJJwsKLxONs1US8Z1Q2m" Bounds="349,353" />
-            <ControlPoint Id="P9saWcjHeLtMPJVHTqjylt" Bounds="544,420" />
-            <ControlPoint Id="NRDnITC4BLZMymLFmQavjq" Bounds="611,448" />
-            <ControlPoint Id="PYqIIg3V9bELAcquAakIfU" Bounds="461,441" />
-            <Node Bounds="597,618,302,665" Id="PgCDKPwJSRPLL3hCbC3H0h">
+            <ControlPoint Id="SeRJJwsKLxONs1US8Z1Q2m" Bounds="98,62" />
+            <ControlPoint Id="P9saWcjHeLtMPJVHTqjylt" Bounds="244,248" />
+            <ControlPoint Id="NRDnITC4BLZMymLFmQavjq" Bounds="313,248" />
+            <ControlPoint Id="PYqIIg3V9bELAcquAakIfU" Bounds="163,248" />
+            <Node Bounds="311,515,284,569" Id="PgCDKPwJSRPLL3hCbC3H0h">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="ProcessAppFlag" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -85,9 +85,9 @@
                   <Pin Id="BLzBjml65aWNdNeBbbsa6f" Name="Input 1" Kind="InputPin" />
                   <Pin Id="AOgtseHbFDfQLCHXMeo0Dr" Name="Output" Kind="OutputPin" />
                 </Patch>
-                <ControlPoint Id="DzQyiTZqIPlMljJcibn50i" Bounds="627,626" />
-                <ControlPoint Id="Kfih2cJW7lJPsyTxbymEL1" Bounds="818,1276" />
-                <Node Bounds="625,642,88,26" Id="VczlzN0CwTkOvVhcWjL9Gd">
+                <ControlPoint Id="DzQyiTZqIPlMljJcibn50i" Bounds="329,523" />
+                <ControlPoint Id="Kfih2cJW7lJPsyTxbymEL1" Bounds="500,1077" />
+                <Node Bounds="327,539,88,26" Id="VczlzN0CwTkOvVhcWjL9Gd">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherData" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="WeatherDayInfo" />
@@ -96,7 +96,7 @@
                   <Pin Id="FfgBMR506pbQKrIZFGmWT6" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JKNWm4T0GZMOvGw5Eo3G28" Name="Weather Day Info" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="708,681,75,26" Id="PsUd7UQNaWtOYv4LuGRb9T">
+                <Node Bounds="410,578,75,26" Id="PsUd7UQNaWtOYv4LuGRb9T">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherDayInfo" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="WeatherDayInfo" />
@@ -106,7 +106,7 @@
                   <Pin Id="JGfkaX9zQJHQPda4rc8rBS" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="OzMK377Kv0wOz3IoueWQ3u" Name="Temperature" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="708,761,119,26" Id="Dj40oqDOrdOLPUZ0SXJorA">
+                <Node Bounds="410,658,119,26" Id="Dj40oqDOrdOLPUZ0SXJorA">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherDayInfo" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="MaximumTemperature" />
@@ -115,7 +115,7 @@
                   <Pin Id="FksZCAYvTtLLFwdg1el67A" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="TsQxn2egD9OMMht9nSIfdx" Name="Maximum Temperature" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="708,838,117,26" Id="Aqz7O6zy4xlObwlLkIgRO3">
+                <Node Bounds="410,735,117,26" Id="Aqz7O6zy4xlObwlLkIgRO3">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherDayInfo" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="MinimumTemperature" />
@@ -124,7 +124,7 @@
                   <Pin Id="A1uPt7kDnyHOaQchBe0scq" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="CRW3cKX7HNxM0hxybKTuuq" Name="Minimum Temperature" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="621,928,62,26" Id="SMgkZFaV0koOl0YwZJG0o4">
+                <Node Bounds="323,825,62,26" Id="SMgkZFaV0koOl0YwZJG0o4">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherData" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Weathers" />
@@ -133,7 +133,7 @@
                   <Pin Id="UXFrWvwI7rWLIpTC58oX0W" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Sg71rpsAt8xQJfxWLx6x3m" Name="Weathers" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="678,968,83,26" Id="Aq6iwpScUcOOqgnvKRROG2">
+                <Node Bounds="380,865,83,26" Id="Aq6iwpScUcOOqgnvKRROG2">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FromSequence" />
@@ -142,7 +142,7 @@
                   <Pin Id="US1pMp7KoYVOqcojs2yD6R" Name="Input" Kind="StateInputPin" />
                   <Pin Id="GFzX2w6qApFMizxiboaxQ0" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="678,1006,80,19" Id="DdIVJMiIBdYO1FTzu5lXyT">
+                <Node Bounds="380,903,80,19" Id="DdIVJMiIBdYO1FTzu5lXyT">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
@@ -153,7 +153,7 @@
                   <Pin Id="SA9OFhVIqm2OhIWLcC0gCo" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="JJvZRaiQnbIOlYbZ2yt0Rz" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="753,1039,68,26" Id="UVTzhgGCScnLvnxv1Mb5MO">
+                <Node Bounds="455,936,68,26" Id="UVTzhgGCScnLvnxv1Mb5MO">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.Weather" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Weather" />
@@ -163,7 +163,7 @@
                   <Pin Id="KQJblnTJPRiOQWatJTw9R0" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="DZfrQ6qM5DqLegRVpC7Zzn" Name="Description" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="802,1121,85,26" Id="Ef0vyssgxiHPTH4tTD9G4u">
+                <Node Bounds="498,1029,85,26" Id="Ef0vyssgxiHPTH4tTD9G4u">
                   <p:NodeReference>
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="MyWeatherData" />
@@ -176,7 +176,7 @@
                   <Pin Id="E2btyxLvPICMPDUKJE0l7T" Name="Min Temperature" Kind="InputPin" />
                   <Pin Id="TUFrjq3AndxPd31VItdwgF" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="609,1060,62,26" Id="JYWCnPVIhP2QK843j9gQMw">
+                <Node Bounds="323,965,62,26" Id="JYWCnPVIhP2QK843j9gQMw">
                   <p:NodeReference LastCategoryFullName="OpenWeatherMap.Standard.Models.WeatherData" LastSymbolSource="OpenWeatherMap.Standard.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Name" />
@@ -188,8 +188,8 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="IjE7qm32wCNQZVJ0hTLoGa" Bounds="611,1311" />
-            <Node Bounds="1045,596" Id="DDE0CpmI8gcLO0gevUjwNi">
+            <ControlPoint Id="IjE7qm32wCNQZVJ0hTLoGa" Bounds="316,1105" />
+            <Node Bounds="878,507,65,19" Id="DDE0CpmI8gcLO0gevUjwNi">
               <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -199,7 +199,54 @@
               <Pin Id="CGMwpUVqFSXMZeTvVn9Rv9" Name="Value" Kind="OutputPin" />
               <Pin Id="V1GUbVfXoJlM0hxy4VTjXR" Name="On Data" Kind="OutputPin" />
             </Node>
-            <Pad Id="DlGdnBVCCs2MHI8wtg7mRN" Comment="" Bounds="1040,709,294,488" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DlGdnBVCCs2MHI8wtg7mRN" Comment="" Bounds="881,564,294,488" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="TLI1G25jvsyNiev7HFe62M" Bounds="959,506,209,46" ShowValueBox="true" isIOBox="true" Value="Just to see the structure of the data retrieved by the nuget">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="ShrJYrsy61zOPQU0IUilfM" Bounds="161,64,320,62" ShowValueBox="true" isIOBox="true" Value="We only want to instantiate our &quot;Current&quot; instance once, so we assign this to Create. This will result in a white pin on our wrapper node.">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Overlay Id="Eob70b13PqtLekCwl8izCU" Name="" Bounds="66,27,477,112" />
+            <Pad Id="DWkaubpFyIJMpqpwudqS4M" Bounds="432,259,228,127" ShowValueBox="true" isIOBox="true" Value="This node here calls the API and retrieves the informations we want. Note it outputs a Task&lt;T&gt;, which is not what we're used to in VL. We simply convert it to an Observable with ToObservable (Task)">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Overlay Id="GdX41vkmp6mPfzEKfyTkmq" Name="" Bounds="84,217,602,204" />
+            <Pad Id="RnZxD1DVF17QOrnNoxq9YB" Bounds="604,525,199,235" ShowValueBox="true" isIOBox="true" Value="Now the funny part : we dig the nodebrowser and look at the structure of the response to retrieve the data we need. If the library you're wrapping provides a good documentation, you're lucky. &#xD;&#xA;&#xD;&#xA;Otherwise, you might have to explore the node browser to retrieve the information you're after...">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="Vf3Z6jM29XYQIPGgQJeMPu" Bounds="604,988,205,132" ShowValueBox="true" isIOBox="true" Value="For convenience, we created our own datatype to store the information we need; Our node now returns an Observable&lt;MyWeatherData&gt;, built with information gathered from OpenWeatherData!">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <Patch Id="Tif1UMfAE2sLaABRaxtZwN" Name="Create" ParticipatingElements="SqoHVG3iFwtMlFveMwqptz">
             <Pin Id="NU3B8dSUXz5MTqohpWIzqf" Name="API Key" Kind="InputPin" />
