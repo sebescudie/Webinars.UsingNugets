@@ -56,7 +56,6 @@ _There are many ways in C# to express the concept of events. In VL, the prefered
 - The lib's repo does not show any code example. Let's look at the [test files](https://github.com/vb2ae/OpenWeatherMap.Standard/blob/master/OpenWeatherMap.Standard.Test/CityNameTests.cs) to see how we can use the lib.
 
 
-
 ### Unmanaged dependencies
 _Some .NET libraries might in turn use libraries themselves. Sometimes, those libraries are not written in C# but rather in an unmanaged language such as C++. Those are called "native dependencies". For quite some time, there was no clear recommandation for nuget packages as where to put those native dependencies : anyone could come up with their own folder structure. As a result, gamma won't be able to pick those up automatically : we have to explicitely tell it where to look for those dlls._
 
