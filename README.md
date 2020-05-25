@@ -3,17 +3,21 @@ _One massive feature of VL is its ability to consume almost any .NET library. Mo
 
 _In this workshop, we'll learn what is the nuget ecosystem, and with hands-on examples, download nugets and make them fit our patching habits._
 
-- 3 ways to get new nodes
-
 ## 1️. Introduction
 _We'll learn what is the nuget ecosystem, and how a library in structured._
+
+There are three ways to get new nodes in VL :
+
+- Write your own C# code
+- Use a library from the GAC
+- Use a nuget
 
 ### GAC
 
 - .NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
-- Let's press CTRL+SHIFT+J `System`
-- Let's create a few nodes 
-- Show MSDN
+- Let's press CTRL+SHIFT+J and look for the `mscorlib` and `System` libs
+- Let's create a few nodes : `Is64BitOperatingSystem`, `Is64BitsProcess`, `MachineName`, and so forth
+- We can have documentation about those on [the MSDN website](https://docs.microsoft.com/en-us/dotnet/api/system.environment.is64bitoperatingsystem?view=netcore-3.1)
 
 ### NuGet ecosystem
 - Think of nuget as a database for .NET libraries (similar to JS' `npm` or python's `pip`)
@@ -38,6 +42,8 @@ _Coming from the textual programming world, nugets might not always fit our patc
 
 ### Incompatible types
 _.NET libraries might return types that are not convenient for us to use in VL. Sometimes, they're not even compatible, even though they have the same name. Let's see how we can overcome that._
+
+[The Gray Book](https://thegraybook.vvvv.org/reference/libraries/using-net-libraries.html#incompatible-types) has info about this.
 
 #### Hands on : GeometryTools
 - Open the example patch : we want to color a line when the circle intersects it.
@@ -68,12 +74,9 @@ _There are many ways in C# to express the concept of events. In VL, the prefered
 ### Unmanaged dependencies
 _Some .NET libraries might in turn use libraries themselves. Sometimes, those libraries are not written in C# but rather in an unmanaged language such as C++. Those are called "native dependencies". For quite some time, there was no clear recommandation for nuget packages as where to put those native dependencies : anyone could come up with their own folder structure. As a result, gamma won't be able to pick those up automatically : we have to explicitely tell it where to look for those dlls._
 
-#### Hands on : DupImageLib
-- Check the example patch : we want to calculate some similarity score between two images.
-- Again, after digging the internets, we find this [DupImageLib](https://www.nuget.org/packages/DupImageLib/) library that performs perceptual hashing.
-- Let's look at the code example provided on [the repo](https://github.com/Quickshot/DupImageLib)
-- Sadly, the node throws an error message, it looks like it cannot find a dependency.
-- Let's create a bat file that adds our nuget's native dependency to gamma's search path and restart gamma : alles gut now, we can patch!
+```
+TODO : Insert Gray Book Link
+```
 
 ## 3. Create a wrapper lib
 _We now know how to use existing nugets and tailors them for further usage in a VL patch. But how could we build re-usable blocks that are not tied to the project we're working on? Here we'll see how we can create our own VL library._
