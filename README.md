@@ -1,10 +1,19 @@
 # Nugets Workshop
-_One massive feature of VL is its ability to consume almost any .NET nuget and turn it into nodes. As patchers, this gives us access to thousands of libraries to solve our problems. Sometimes though, those libraries might not exactly fit the approach we're used to from visual programming : taken out of the box, nodes can use exotic types, or simply be way too complicated to use in a high-level dataflow approach._
+_One massive feature of VL is its ability to consume almost any .NET library. Most of them are available as nugets. As patchers, this gives us access to thousands of libraries to solve our problems. Sometimes though, those libraries might not exactly fit the approach we're used to from visual programming : taken out of the box, nodes can use exotic types, or simply be way too complicated to use in a high-level dataflow approach._
 
 _In this workshop, we'll learn what is the nuget ecosystem, and with hands-on examples, download nugets and make them fit our patching habits._
 
+- 3 ways to get new nodes
+
 ## 1️. Introduction
-_We'll learn what is the nuget ecosystem, and how a plugin in structured._
+_We'll learn what is the nuget ecosystem, and how a library in structured._
+
+### GAC
+
+- .NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
+- Let's press CTRL+SHIFT+J `System`
+- Let's create a few nodes 
+- Show MSDN
 
 ### NuGet ecosystem
 - Think of nuget as a database for .NET libraries (similar to JS' `npm` or python's `pip`)
@@ -47,7 +56,7 @@ _.NET libraries might return types that are not convenient for us to use in VL. 
 - Mention the fact that nodes must always return a Spread.
 
 ### Events
-_There are many ways in C# to express the concept of events. In VL, the prefered paradigm is Observables. If a plugin uses the [.NET Core Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events), VL automatically converts it to an Observable. There are other cases though where we'll need to adapt the nodes so we can cosume them._
+_There are many ways in C# to express the concept of events. In VL, the prefered paradigm is Observables. If a library uses the [.NET Core Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events), VL automatically converts it to an Observable. There are other cases though where we'll need to adapt the nodes so we can cosume them._
 
 #### Hands on : OpenWeatherMap.Standard
 - We want to retrieve some real-time weather data from a specific city. After digging, we find the [OpenWeather.Standard](https://www.nuget.org/packages/OpenWeatherMap.Standard/) nuget that allows us to easily use the Open Weather API.
