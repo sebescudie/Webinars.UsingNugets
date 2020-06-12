@@ -9,26 +9,26 @@ _We'll learn what is the nuget ecosystem, and how a library in structured._
 There are three ways to get new nodes in VL :
 
 - Write your own C# code
-- Use a library from the GAC
+- Use a library from the GAC (Global Assembly Cache)
 - Use a nuget
 
 ### GAC
 
 - .NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
-- Let's press CTRL+SHIFT+E and look for the `mscorlib` and `System` libs
+- Let's press <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> and look for the `mscorlib` and `System` libs
 - Let's create a few nodes : `Is64BitOperatingSystem`, `Is64BitsProcess`, `MachineName`, and so forth
 - We can have documentation about those on [the MSDN website](https://docs.microsoft.com/en-us/dotnet/api/system.environment.is64bitoperatingsystem?view=netcore-3.1)
 
 ### NuGet ecosystem
 - Think of nuget as a database for .NET libraries (similar to JS' `npm` or python's `pip`)
-- Those nugets come in `.dll` format, and can be used with any language of the .NET framework (C# and VB, and now VL !)
+- Those nugets come in `.dll` format, and can be used with any language of the .NET framework (C# and VB, and now VL!)
     - As C# or VB, VL is a language for the .NET framework
 
 #### Things to do :
 
-- Open the Nuget Gallery
+- Open the [Nuget Gallery](https://www.nuget.org/)
 - Browse, show a nuget page
-- Explain the "structure" of the nuget page
+- Observe the "structure" of the nuget page : versions, project site, source repository, etc.
 
 ### Small demo : String.Extensions
 - Let's install [StringExtensionsLibrary](https://www.nuget.org/packages/StringExtensionsLibrary/), a convenience nuget that contains many functions that allow us to do string manipulations
@@ -43,23 +43,23 @@ _Coming from the textual programming world, nugets might not always fit our patc
 ### Incompatible types
 _.NET libraries might return types that are not convenient for us to use in VL. Sometimes, they're not even compatible, even though they have the same name. Let's see how we can overcome that._
 
-[The Gray Book](https://thegraybook.vvvv.org/reference/libraries/using-net-libraries.html#incompatible-types) has info about this.
+Note that [The Gray Book](https://thegraybook.vvvv.org/reference/libraries/using-net-libraries.html#incompatible-types) has info about this.
 
 #### Hands on : GeometryTools
 - Open the example patch : we want to color a line when the circle intersects it.
-- After some searching, we've found [this nuget](https://www.nuget.org/packages/GeometryTools/)
-- The GeometryTools nuget has a `IsPointOnLineSegment` operation, but its input are not compatible with our Vector2 IOBoxes
-- Let's create a wrapper node that takes care of the type conversion
+- After some searching, we've found [this nuget](https://www.nuget.org/packages/GeometryTools/), called `GeometryTools`.
+- The `GeometryTools` nuget has a `IsPointOnLineSegment` operation, but its input are not compatible with our Vector2 IOBoxes
+- By looking at the lib's source code, we learn that the library uses `System.Numerics.Vectors` to express Vector2 values. We need to convert those from and to the Vector2 that VL knows : let's create wrapper nodes that takes care of the type conversion
 
 #### Hands on : ColorThief
 - Open the example patch : we want to retrieve a color palette from an image.
 - After looking around on the net, we find the [ColorThief](https://www.nuget.org/packages/ksemenenko.ColorThief/) library that seems to do what we want.
 - Let's look at the code example provided on the [repo](https://github.com/KSemenenko/ColorThief)
 - We install it, find the `GetPalette` node, but its inputs are not that VL friendly...
-    - The node turns pink : it's a warning
-- We create a wrapper node that takes care of making it more suited for our patching life
+    - The node turns pink : it's a warning. Here, the node expects a `ColorThief` instance to operate on, but we did not provide one. Hence the node complaining!
+- We create a wrapper node that first takes care of creating this instance for us, and makes it more suited for our patching life
 - Let's expose the color count and give it a default value
-- Mention the fact that nodes must always return a Spread.
+- Note that nodes must always return a Spread
 
 ### Events
 _There are many ways in C# to express the concept of events. In VL, the prefered paradigm is Observables. If a library uses the [.NET Core Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events), VL automatically converts it to an Observable. There are other cases though where we'll need to adapt the nodes so we can cosume them._
@@ -74,9 +74,7 @@ _There are many ways in C# to express the concept of events. In VL, the prefered
 ### Unmanaged dependencies
 _Some .NET libraries might in turn use libraries themselves. Sometimes, those libraries are not written in C# but rather in an unmanaged language such as C++. Those are called "native dependencies". For quite some time, there was no clear recommandation for nuget packages as where to put those native dependencies : anyone could come up with their own folder structure. As a result, gamma won't be able to pick those up automatically : we have to explicitely tell it where to look for those dlls._
 
-```
-TODO : Insert Gray Book Link
-```
+For more informations on this topic, head other to the [Gray Book](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#unmanagednative-dependencies).
 
 ## 3. Create a wrapper lib
 _We now know how to use existing nugets and tailors them for further usage in a VL patch. But how could we build re-usable blocks that are not tied to the project we're working on? Here we'll see how we can create our own VL library._
