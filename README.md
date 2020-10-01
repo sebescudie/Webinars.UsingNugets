@@ -14,18 +14,18 @@ There are three ways to get new nodes in VL :
 
 ### GAC
 
-- .NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
+.NET already comes with many libraries : this is known as the GAC (Global Assembly Cache).
+
+#### Hands on :
 - Let's press <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>E</kbd> and look for the `mscorlib` and `System` libs
 - Let's create a few nodes : `Is64BitOperatingSystem`, `Is64BitsProcess`, `MachineName`, and so forth
 - We can have documentation about those on [the MSDN website](https://docs.microsoft.com/en-us/dotnet/api/system.environment.is64bitoperatingsystem?view=netcore-3.1)
 
-### NuGet ecosystem
+### The NuGet ecosystem
 - Think of nuget as a database for .NET libraries (similar to JS' `npm` or python's `pip`)
-- Those nugets come in `.dll` format, and can be used with any language of the .NET framework (C# and VB, and now VL!)
-    - As C# or VB, VL is a language for the .NET framework
+- Those nugets come in `.dll` format, and can be used with any language of the .NET framework. Like C# or Visual Basic, VL is a language for the .NET framework.
 
-#### Things to do :
-
+#### Hands on :
 - Open the [Nuget Gallery](https://www.nuget.org/)
 - Browse, show a nuget page
 - Observe the "structure" of the nuget page : versions, project site, source repository, etc.
@@ -34,7 +34,7 @@ There are three ways to get new nodes in VL :
 - Let's install [StringExtensionsLibrary](https://www.nuget.org/packages/StringExtensionsLibrary/), a convenience nuget that contains many functions that allow us to do string manipulations
 - We read the [Github descriptions](https://github.com/timothymugayi/StringExtensions), and see many usefull functions that could be usefull in our patches
 - We install the nuget, reference it in our patch, and new category shows up in the node browser
-- Let's look at the node browser and the Github page side by side : that's a match !
+- Let's look at the node browser and the Github page side by side : that's a match!
 - Let's use a cool node and see it works instantly in our dataflow approach
 
 ## 2. Tailoring a nuget for VL usage
@@ -64,11 +64,10 @@ Note that [The Gray Book](https://thegraybook.vvvv.org/reference/libraries/using
 ### Events
 _There are many ways in C# to express the concept of events. In VL, the prefered paradigm is Observables. If a library uses the [.NET Core Event Pattern](https://docs.microsoft.com/en-us/dotnet/csharp/modern-events), VL automatically converts it to an Observable. There are other cases though where we'll need to adapt the nodes so we can cosume them._
 
-#### Hands on : OpenWeatherMap.Standard
-- We want to retrieve some real-time weather data from a specific city. After digging, we find the [OpenWeather.Standard](https://www.nuget.org/packages/OpenWeatherMap.Standard/) nuget that allows us to easily use the Open Weather API.
-- We go on the [Open Weather](https://openweathermap.org/guide) website to generate an API key
+#### Hands on : DuckDuckGo Instant Answers
+- We want to use DuckDuckGo's [Instant Answer](https://duckduckgo.com/api) feature in our patch. After digging, we find the [DuckSharp](https://www.nuget.org/packages/TheMulti0.DuckSharp/) nuget that gracefully wraps this API in C#
 - We install the nuget and reference it in our doc
-- The lib's repo does not show any code example. Let's look at the [test files](https://github.com/vb2ae/OpenWeatherMap.Standard/blob/master/OpenWeatherMap.Standard.Test/CityNameTests.cs) to see how we can use the lib.
+- The lib's README on Github shows a [basic usage](https://github.com/TheMulti0/DuckSharp), let's see how we can patch it
 
 
 ### Unmanaged dependencies
@@ -86,3 +85,10 @@ _We now know how to use existing nugets and tailors them for further usage in a 
 - We'll need to adapt a few things : create conversion operation for Vectors, change `MutableList<T>` to `Spread<T>`, etc
 - Now, let's create a document that has a reference to our `VL.2d.Physics` document : see how the forwarded class appear in the node browser
 - Let's write some documentation for the utils we've created
+
+## 4. In a nutshell
+
+- Go to Github
+- Read tests
+- When you don't know a type, look for it in the node browser
+- Go upstream

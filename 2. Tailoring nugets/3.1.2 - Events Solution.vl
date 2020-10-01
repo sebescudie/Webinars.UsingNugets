@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ICgvezQKtmNK97TISNktk8" LanguageVersion="2020.2.0.269" Version="0.128">
+  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.0" />
+  <Patch Id="TZRPJVWPg88Oh9Oc8iM8gU">
+    <Canvas Id="VWKXxAh9nkSMB599oHSrW6" DefaultCategory="Main" CanvasType="FullCategory">
+      <Canvas Id="EdBVVY5hxqNPC0dNnSmqwQ" Name="DuckDuckGo" Position="433,588">
+        <!--
+
+    ************************ InstantAnswer ************************
+
+-->
+        <Node Name="InstantAnswer" Bounds="466,446" Id="SMi6HCzF0gwM3fAAC2D0aV">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="SxZN5qqAQo1LEfosGRQkI5">
+            <Canvas Id="L5vU8CgMXztN6YNIc1ufAJ" CanvasType="Group">
+              <Node Bounds="181,298,75,26" Id="EQzHbgyTFJ4NGXOSjJPuwY">
+                <p:NodeReference LastCategoryFullName="DuckSharp.DuckSharpClient" LastSymbolSource="DuckSharp.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="DuckSharpClient" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="OgKVesH4lzlQLEAqiSV9s2" Name="Application Name" Kind="InputPin" DefaultValue="vvvv gamma">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="TDoVfLUjYLuNap5GmMolJT" Name="Allow Html" Kind="InputPin" />
+                <Pin Id="ApoR1s0csYjOe45bFZGwea" Name="Allow Disambiguation" Kind="InputPin" />
+                <Pin Id="Op6elF1qoYxNVlwTLvS59W" Name="Client" Kind="InputPin" />
+                <Pin Id="G6UC2vp6KsYNiUZoacM6NK" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="COkWbzSbJrYLfvJbIYnX2z" SlotId="Nkv3Mot0vDmOTd3YzWmg6J" Bounds="183,344" />
+              <Node Bounds="169,505,224,162" Id="NZC38GKrYDoQUEyyRNYCv9">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <Pin Id="ViXs1mk8VliPVErOAA5YWk" Name="Force" Kind="InputPin" />
+                <Pin Id="CQktVdsNTWtP0k6ZXhsX1U" Name="Dispose Cached Outputs" Kind="InputPin" />
+                <Pin Id="EGYDGozmynHMVf9jzLFzRo" Name="Has Changed" Kind="OutputPin" />
+                <Patch Id="Kh11JZ3vRivPeQNxJ8BlkC" ManuallySortedPins="true">
+                  <Patch Id="E9uxDpdAHyZQczgauykaz0" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="OclpkZ8enGIOkDjc4p1qnR" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="181,563,123,26" Id="U043KUm3EY4OLk5jdHPYwM">
+                    <p:NodeReference LastCategoryFullName="DuckSharp.DuckSharpClient" LastSymbolSource="DuckSharp.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="GetInstantAnswerAsync" />
+                    </p:NodeReference>
+                    <Pin Id="B4Gvi2CYQafOpKtbIcVOR9" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="SFExbW3dBFALHxOEBz2a2L" Name="Query" Kind="InputPin" />
+                    <Pin Id="EOxqr8GdCviMuq8XBs8UTU" Name="Token" Kind="InputPin" />
+                    <Pin Id="BZWgl06h32ANowJRdHnDCY" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="BQ0S91MEiOgLWe8Rhy8HYJ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="299,528,82,26" Id="TvugmAHGLmiONto8lTztij">
+                    <p:NodeReference LastCategoryFullName="Reactive.CancellationToken" LastSymbolSource="VL.Reactive.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="CancellationToken" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                    </p:NodeReference>
+                    <Pin Id="SwylfHrcY83PHzsCSsuuMu" Name="Canceled" Kind="InputPin" />
+                    <Pin Id="VyyQ991xlNrNMfF8x8lljt" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="299,615,79,26" Id="LV1Tpy6x35HOHv96tBcazN">
+                    <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToObservable" />
+                      <CategoryReference Kind="ClassType" Name="Task" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="U9YlflmKtxFPnbRNDFzMpx" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="RbxLfRsYSooNP3xKzGXu8D" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="Us25rCHL27VLSRurFONW7f" Bounds="301,661" Alignment="Bottom" />
+              </Node>
+              <ControlPoint Id="IkJhgt4QJZ9MpaTKZeZW1k" Bounds="242,483" />
+              <ControlPoint Id="ROAeMQv923VPI5yGptYHcg" Bounds="301,696" />
+              <ControlPoint Id="AAPomijoziXMSpJ5j5xNGQ" Bounds="171,479" />
+              <Overlay Id="Kk7rbkLlLPwNfqX2mrOoSd" Name="1. Client creation" Bounds="87,247,188,118" />
+              <Pad Id="Uuh2eFpxl9JQHd0oU6lj69" Bounds="416,460,307,320" ShowValueBox="true" isIOBox="true" Value="Now that's interesting. The GetInstantAnswerAsync node returns a Task&lt;InstantAnswer&gt;. This is not what we want : we prefer to work with Observables.&#xD;&#xA;&#xD;&#xA;Fortunately, there's a simple node that allows to do this : it's called ToObservable (Task). Now, we get an Observable&lt;InstantAnswer&gt;, as we expected.&#xD;&#xA;&#xD;&#xA;Note that we've stuffed this whole patch inside a Cache region. As a result, the observable will be created when we bang the Update pin from outside, and stay  on the output of the Cache region. When the event occurs (i.e when the DuckDuckGo search is over), the observable fires and gives the result.">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+            </Canvas>
+            <Patch Id="AHauJqmMCueLX2TKUFYLiH" Name="Create" ParticipatingElements="B831BwKuLhrLnolZkmPgQh" />
+            <Patch Id="FJw5LafbhK4PCuQRdGy5yj" Name="Update" ManuallySortedPins="true">
+              <Pin Id="CNixYxbAFuGOySxUPse7xX" Name="Query" Kind="InputPin" />
+              <Pin Id="QAg7IWuITjmQceDuNE2FVj" Name="Output" Kind="OutputPin" />
+              <Pin Id="AeQgxbMDxQdQFzKKWbURL3" Name="Update" Kind="InputPin" Bounds="492,576" />
+            </Patch>
+            <ProcessDefinition Id="MvaJTvCydcfMAWFGzoiXpe">
+              <Fragment Id="U87qhie69qUNAormQaf7uX" Patch="AHauJqmMCueLX2TKUFYLiH" Enabled="true" />
+              <Fragment Id="GRnqZOKet7XOfwrBqOpriF" Patch="FJw5LafbhK4PCuQRdGy5yj" Enabled="true" />
+            </ProcessDefinition>
+            <Slot Id="Nkv3Mot0vDmOTd3YzWmg6J" Name="Duck Sharp Client" />
+            <Link Id="B831BwKuLhrLnolZkmPgQh" Ids="G6UC2vp6KsYNiUZoacM6NK,COkWbzSbJrYLfvJbIYnX2z" />
+            <Link Id="P8edk9wnVqlNpE1igRgNew" Ids="COkWbzSbJrYLfvJbIYnX2z,B4Gvi2CYQafOpKtbIcVOR9" />
+            <Link Id="GAzO4HjIvCANQzFU1BBKXp" Ids="VyyQ991xlNrNMfF8x8lljt,EOxqr8GdCviMuq8XBs8UTU" />
+            <Link Id="MXmlkuxpuxiOU5zqgMGxnf" Ids="CNixYxbAFuGOySxUPse7xX,IkJhgt4QJZ9MpaTKZeZW1k" IsHidden="true" />
+            <Link Id="PzLT5aWFVZsO3iqMlzXGNV" Ids="BQ0S91MEiOgLWe8Rhy8HYJ,U9YlflmKtxFPnbRNDFzMpx" />
+            <Link Id="LgAAgAyk67dLpwwfewWFsa" Ids="RbxLfRsYSooNP3xKzGXu8D,Us25rCHL27VLSRurFONW7f" />
+            <Link Id="LZjtdRvIpNwOtf0uxvsDi2" Ids="Us25rCHL27VLSRurFONW7f,ROAeMQv923VPI5yGptYHcg" />
+            <Link Id="DIKrxMQgx7AQDJZbAeCOSl" Ids="ROAeMQv923VPI5yGptYHcg,QAg7IWuITjmQceDuNE2FVj" IsHidden="true" />
+            <Link Id="I3jwbVqB5TVOY5c4wvsKxJ" Ids="AAPomijoziXMSpJ5j5xNGQ,ViXs1mk8VliPVErOAA5YWk" />
+            <Link Id="TE9gDrgiXfZLpz1bOa2nnX" Ids="AeQgxbMDxQdQFzKKWbURL3,AAPomijoziXMSpJ5j5xNGQ" IsHidden="true" />
+            <Patch Id="DKhDay2AARNLpDA6JFrPmP" Name="Dispose" />
+            <Link Id="Gym2zLDrQwoQAGFKSBI0U6" Ids="IkJhgt4QJZ9MpaTKZeZW1k,SFExbW3dBFALHxOEBz2a2L" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="GcjDxifKcPPPEcDbM5nbo0">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ucedqb1KWNjPmbPVHgnTvx">
+        <Canvas Id="B5zPUpWufWhL5sOPXExD4P" CanvasType="Group">
+          <Pad Id="MUjUNJPm870ME8eVyhsHnJ" Bounds="58,182,278,40" ShowValueBox="true" isIOBox="true" Value="How could we make use of DuckDuckGo's InstantAnswer feature inside VVVV ?">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="75,364,81,19" Id="PfMM8X8OyAQQGjQO5pWZFh">
+            <p:NodeReference>
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Main" />
+              <CategoryReference Kind="Category" Name="DuckDuckGo" />
+              <Choice Kind="ProcessAppFlag" Name="InstantAnswer" />
+            </p:NodeReference>
+            <Pin Id="G2U7G8AWIeMPP7hFSwupTl" Name="Query" Kind="InputPin" />
+            <Pin Id="GGnTm3GhZOFLPJ8rEWgXXf" Name="Update" Kind="InputPin" />
+            <Pin Id="SMcmmYm6bTtLyIPC9rOJSN" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EPSFjT5on3sOWTEFY0Xf9t" Comment="Update" Bounds="153,346,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OpYGsssuedAPyaOhuJsvwP" Comment="Query" Bounds="77,301,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CV5qldun7EgMUlWqRQRJB6" Bounds="256,338,228,61" ShowValueBox="true" isIOBox="true" Value="We've created this small wrapper to perform the DuckDuckGo Search. Peak inside to see how it's done!">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="75,459,65,19" Id="NipQPSGQUv1OtJz2bTyFoT">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="VKcW4MS4ownOKo0RIT0AhQ" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="RDxChKH0jxLOyS0jrbyMPK" Name="Reset" Kind="InputPin" />
+            <Pin Id="KKuCk5SnWuAQWuzs4qU4U5" Name="Value" Kind="OutputPin" />
+            <Pin Id="N6VPyeATVeKLPa4rnsnoJ1" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JZ9XUzK3KQyLlabTYQo63w" Bounds="256,442,241,62" ShowValueBox="true" isIOBox="true" Value="When the search is over, we get an Observable carrying the results. As you can see, it's type is InstantAnswer.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="75,573,67,26" Id="PUD77SMMS0DMo0eWPz5Iyi">
+            <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Abstract" />
+            </p:NodeReference>
+            <Pin Id="Ir9I2NEDA2kNgkuS2fdvsP" Name="Input" Kind="StateInputPin" />
+            <Pin Id="CjfGz36DMCwNF1fJPxsXWL" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="L1ZrMl2JUUrLULAxKmTWD6" Name="Abstract" Kind="OutputPin" />
+          </Node>
+          <Pad Id="I0Wly2Hlvg8O7bFF2OfA1k" Comment="Abstract" Bounds="139,683,261,204" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="454,573,67,26" Id="GJo7Fwn04gWMuiRcKxqn4S">
+            <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Entity" />
+            </p:NodeReference>
+            <Pin Id="Qt0KxJqdSNEP6En8g6xImY" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OAkCoMIu4LoLGuJB6Ur4uD" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="LtgcpzUhbPjMSTkUPsn3mH" Name="Entity" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SWKBEZ8WvIsMU1gmdHEEgc" Comment="Entity" Bounds="518,683,166,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Dus8XpFjCSOPbqbRdUP9NT" Bounds="543,573,220,59" ShowValueBox="true" isIOBox="true" Value="We can simply look in the node browser for InstantAnswer and see which nodes we can play with.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="MOdGqt8I8pGQNniw5Fw3To" Name="Create" />
+        <Patch Id="CQr9l4rp7h6QCntxBe1BI4" Name="Update" />
+        <ProcessDefinition Id="D9LnQo8VHbQPcyxT8baVVb">
+          <Fragment Id="OgVUnVduRGLMY92GI4tw66" Patch="MOdGqt8I8pGQNniw5Fw3To" Enabled="true" />
+          <Fragment Id="SghAJJb92fIOyOjfV17zio" Patch="CQr9l4rp7h6QCntxBe1BI4" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="QPlBcb4mazZLn99YVTBepn" Ids="EPSFjT5on3sOWTEFY0Xf9t,GGnTm3GhZOFLPJ8rEWgXXf" />
+        <Link Id="NClpXC7Q4qQQN05VkIBhDN" Ids="OpYGsssuedAPyaOhuJsvwP,G2U7G8AWIeMPP7hFSwupTl" />
+        <Link Id="UzEzxGKDDTeLtrCK3hieLO" Ids="SMcmmYm6bTtLyIPC9rOJSN,VKcW4MS4ownOKo0RIT0AhQ" />
+        <Link Id="VXYYLKkMZOZOZ0yKfKdKWk" Ids="KKuCk5SnWuAQWuzs4qU4U5,Ir9I2NEDA2kNgkuS2fdvsP" />
+        <Link Id="HPzIPoncSwMMyGlI1BaU2Y" Ids="L1ZrMl2JUUrLULAxKmTWD6,I0Wly2Hlvg8O7bFF2OfA1k" />
+        <Link Id="NA7QRm1dMduMQHOODMQYwt" Ids="LtgcpzUhbPjMSTkUPsn3mH,SWKBEZ8WvIsMU1gmdHEEgc" />
+        <Link Id="BSvIkUg8PesLOKIrgITbSF" Ids="KKuCk5SnWuAQWuzs4qU4U5,Qt0KxJqdSNEP6En8g6xImY" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.0" />
+  <NugetDependency Id="BQMucwU59YQMMEwAnon0MJ" Location="ThreeFourteen.Finnhub.Client" Version="1.2.0" />
+  <NugetDependency Id="JbtQ9R0CaS3M4gY3RK46hu" Location="TheMulti0.DuckSharp" Version="1.0.2" />
+</Document>

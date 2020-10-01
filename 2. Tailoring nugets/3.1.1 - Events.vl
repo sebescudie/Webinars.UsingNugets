@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ICgvezQKtmNK97TISNktk8" LanguageVersion="2020.2.0.269" Version="0.128">
+  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.0" />
+  <Patch Id="TZRPJVWPg88Oh9Oc8iM8gU">
+    <Canvas Id="VWKXxAh9nkSMB599oHSrW6" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="GcjDxifKcPPPEcDbM5nbo0">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ucedqb1KWNjPmbPVHgnTvx">
+        <Canvas Id="B5zPUpWufWhL5sOPXExD4P" CanvasType="Group">
+          <Pad Id="MUjUNJPm870ME8eVyhsHnJ" Bounds="524,458,278,40" ShowValueBox="true" isIOBox="true" Value="How could we make use of DuckDuckGo's InstantAnswer feature inside VVVV ?">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="MOdGqt8I8pGQNniw5Fw3To" Name="Create" />
+        <Patch Id="CQr9l4rp7h6QCntxBe1BI4" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="D9LnQo8VHbQPcyxT8baVVb">
+          <Fragment Id="OgVUnVduRGLMY92GI4tw66" Patch="MOdGqt8I8pGQNniw5Fw3To" Enabled="true" />
+          <Fragment Id="SghAJJb92fIOyOjfV17zio" Patch="CQr9l4rp7h6QCntxBe1BI4" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.0" />
+  <NugetDependency Id="BQMucwU59YQMMEwAnon0MJ" Location="ThreeFourteen.Finnhub.Client" Version="1.2.0" />
+  <NugetDependency Id="JbtQ9R0CaS3M4gY3RK46hu" Location="TheMulti0.DuckSharp" Version="1.0.2" />
+</Document>
