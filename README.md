@@ -79,7 +79,7 @@ For more informations on this topic, head other to the [Gray Book](https://thegr
 _We now know how to use existing nugets and tailors them for further usage in a VL patch. But how could we build re-usable blocks that are not tied to the project we're working on? Here we'll see how we can create our own VL library._
 
 #### Hands on : AetherPhysics
-- We'll start by downloading the `Aether.Physics2D.NetStandard`package
+- We'll start by downloading the `Aether.Physics2D` nuget
 - Then, we'll create a new document named `VL.2d.Physics` : just by referencing this VL doc in our project, we'll have access to all the features of the physics library
 - Now we'll need to forward Classes, it means that our `VL.2d.Physics` document will then expose those classes to the other documents that are referencing it
 - We'll need to adapt a few things : create conversion operation for Vectors, change `MutableList<T>` to `Spread<T>`, etc
@@ -87,8 +87,8 @@ _We now know how to use existing nugets and tailors them for further usage in a 
 - Let's write some documentation for the utils we've created
 
 ## 4. In a nutshell
+If you must remember something from this workshop, it must be those points:
 
-- Go to Github
-- Read tests
-- When you don't know a type, look for it in the node browser
-- Go upstream
+- Whenever possible, go to the Github page of the nuget you're trying to use. You might find code examples and/or test files that can show you how the library is meant to be used. If you're planning to wrap a nuget to create a fully fledged library, it's better if the code is properly maintained (does the repo owner reply to issues? has the code been recently updated?)
+- If a node returns a type you don't know, simply type it in the node browser and see what nodes the library has to offer. Most of the time you can deduce the innards of lib by looking at its nodes
+- If a node expects an input that and you don't know what to feed it, go backwards : start from the input of the node and explore the node browser until you can connect to the data you already have. See for that example how we managed to retrieve the `Radius` out of a `Body` in our `2D.Physics` wrapper : the `Radius` node takes a `Shape` as input. But what is a `Shape`? If we type it in the node browser, we get a `Shape` node, cool, but what do we do with it? It takes a `Fixture` as input. Ok, then we do the same by typing `Fixture` in the node browser, and so forth until we find our `Body` again!
