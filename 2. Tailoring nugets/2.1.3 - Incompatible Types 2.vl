@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FWrDWkpHhcpPOa5rlw0hfn" LanguageVersion="2020.1.1.108" Version="0.128">
-  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.1.1" />
+<Document xmlns:p="property" Id="FWrDWkpHhcpPOa5rlw0hfn" LanguageVersion="2020.2.0.269" Version="0.128">
+  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.2.0" />
   <Patch Id="B49oQkJgJtzLYKf5LRsNQf">
     <Canvas Id="E2DcNWZbgrhNH8qgF3joQS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -56,7 +56,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImageReader" />
             </p:NodeReference>
-            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="..\assets\flower four.jpg">
+            <Pin Id="J9wfEpoPnyqPlswW6iKGhQ" Name="Filename" Kind="InputPin" DefaultValue="..\assets\node20.jpg">
               <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
               </p:TypeAnnotation>
@@ -85,5 +85,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.1.1" />
+  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.2.0" />
 </Document>
