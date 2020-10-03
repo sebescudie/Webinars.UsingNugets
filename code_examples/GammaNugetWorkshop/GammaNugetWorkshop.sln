@@ -5,11 +5,9 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingNugets", "GammaNugetWorkshop\UsingNugets.csproj", "{705A4FC7-487C-484F-A589-E550672911CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollisionDetection", "CollisionDetection\CollisionDetection.csproj", "{9ADD7276-5268-4AB4-AC30-237AEB1133CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollisionDetection", "CollisionDetection\CollisionDetection.csproj", "{9ADD7276-5268-4AB4-AC30-237AEB1133CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorExtraction", "ColorExtraction\ColorExtraction.csproj", "{85CB6D38-6747-43FD-B185-7BEDD53E3AB6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSimilarity", "ImageSimilarity\ImageSimilarity.csproj", "{502178D8-7028-449A-80A6-99A35EFFDE0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorExtraction", "ColorExtraction\ColorExtraction.csproj", "{85CB6D38-6747-43FD-B185-7BEDD53E3AB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{85CB6D38-6747-43FD-B185-7BEDD53E3AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85CB6D38-6747-43FD-B185-7BEDD53E3AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85CB6D38-6747-43FD-B185-7BEDD53E3AB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{502178D8-7028-449A-80A6-99A35EFFDE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{502178D8-7028-449A-80A6-99A35EFFDE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{502178D8-7028-449A-80A6-99A35EFFDE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{502178D8-7028-449A-80A6-99A35EFFDE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
