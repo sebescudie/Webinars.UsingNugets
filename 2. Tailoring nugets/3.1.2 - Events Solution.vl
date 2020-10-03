@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ICgvezQKtmNK97TISNktk8" LanguageVersion="2020.2.0.269" Version="0.128">
-  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.0" />
+<Document xmlns:p="property" Id="Af79W7RuBYxPigr39ATp6R" LanguageVersion="2020.2.3.282" Version="0.128">
+  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.3-0282-ge32a5ae3ee" />
   <Patch Id="TZRPJVWPg88Oh9Oc8iM8gU">
     <Canvas Id="VWKXxAh9nkSMB599oHSrW6" DefaultCategory="Main" CanvasType="FullCategory">
       <Canvas Id="EdBVVY5hxqNPC0dNnSmqwQ" Name="DuckDuckGo" Position="433,588">
@@ -190,26 +190,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="75,573,67,26" Id="PUD77SMMS0DMo0eWPz5Iyi">
-            <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Abstract" />
-            </p:NodeReference>
-            <Pin Id="Ir9I2NEDA2kNgkuS2fdvsP" Name="Input" Kind="StateInputPin" />
-            <Pin Id="CjfGz36DMCwNF1fJPxsXWL" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="L1ZrMl2JUUrLULAxKmTWD6" Name="Abstract" Kind="OutputPin" />
-          </Node>
-          <Pad Id="I0Wly2Hlvg8O7bFF2OfA1k" Comment="Abstract" Bounds="139,683,261,204" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="454,573,67,26" Id="GJo7Fwn04gWMuiRcKxqn4S">
-            <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Entity" />
-            </p:NodeReference>
-            <Pin Id="Qt0KxJqdSNEP6En8g6xImY" Name="Input" Kind="StateInputPin" />
-            <Pin Id="OAkCoMIu4LoLGuJB6Ur4uD" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="LtgcpzUhbPjMSTkUPsn3mH" Name="Entity" Kind="OutputPin" />
-          </Node>
-          <Pad Id="SWKBEZ8WvIsMU1gmdHEEgc" Comment="Entity" Bounds="518,683,166,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I0Wly2Hlvg8O7bFF2OfA1k" Comment="Abstract" Bounds="139,683,296,170" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SWKBEZ8WvIsMU1gmdHEEgc" Comment="Entity" Bounds="518,683,130,-2" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Dus8XpFjCSOPbqbRdUP9NT" Bounds="543,573,220,59" ShowValueBox="true" isIOBox="true" Value="We can simply look in the node browser for InstantAnswer and see which nodes we can play with.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -219,6 +201,70 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="75,570,67,29" Id="PaAPUsSDjXjMbdyKCdgARR">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="RNeQNugyfkqPWrL3BUgr8B" Name="Condition" Kind="InputPin" />
+            <Patch Id="V7Yxp5FYl3zM95elGS21Zo" ManuallySortedPins="true">
+              <Patch Id="El52RetIGp3MCtehN1D0qS" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="RtrbrLhtaBdOP1hyztMXwt" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="75,573,67,26" Id="PUD77SMMS0DMo0eWPz5Iyi">
+                <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Abstract" />
+                </p:NodeReference>
+                <Pin Id="Ir9I2NEDA2kNgkuS2fdvsP" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CjfGz36DMCwNF1fJPxsXWL" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="L1ZrMl2JUUrLULAxKmTWD6" Name="Abstract" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="BO7vrovR7LHLePxUwKGZ53" Bounds="139,618" Alignment="Bottom" />
+            <ControlPoint Id="LvxCr0vznEiQAHToObYuWm" Bounds="139,550" Alignment="Top" />
+          </Node>
+          <Node Bounds="454,570,67,29" Id="SY0Veakj7F2PFI010S9o00">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="SiyFhvH4zYUPpJLxVs7Onv" Name="Condition" Kind="InputPin" />
+            <Patch Id="A2n2rT4QcWkLPpTSn2NhQe" ManuallySortedPins="true">
+              <Patch Id="PXppGvbRtFOPZkvnz5WA9Z" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="HXbTujvC7DbMuAmggSB7ML" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="454,573,67,26" Id="GJo7Fwn04gWMuiRcKxqn4S">
+                <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Entity" />
+                </p:NodeReference>
+                <Pin Id="Qt0KxJqdSNEP6En8g6xImY" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OAkCoMIu4LoLGuJB6Ur4uD" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="LtgcpzUhbPjMSTkUPsn3mH" Name="Entity" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="NH78H62ern5NiwTgFK1MOK" Bounds="518,618" Alignment="Bottom" />
+            <ControlPoint Id="QkevOkkOwiCQCHfOwy0yM5" Bounds="518,550" Alignment="Top" />
+          </Node>
+          <Node Bounds="63,505,65,19" Id="Q4wNQBiIL5ON9AZbhHLtHi">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+            </p:NodeReference>
+            <Pin Id="EoaN3Z1QV55LFWMU8cV85R" Name="X" Kind="InputPin" />
+            <Pin Id="JwA0mjvHIJmMhOqbidD2Gj" Name="Result" Kind="OutputPin" />
+            <Pin Id="B01vTReDI2sP00sk5RR1zG" Name="Not Assigned" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="442,510,65,19" Id="LqkmZlA1XpDNk9p1jJDvc3">
+            <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+            </p:NodeReference>
+            <Pin Id="RmmOAAbVEl3N9roF2x1SrC" Name="X" Kind="InputPin" />
+            <Pin Id="DMQp0VOHhRWLy0aqkAtygo" Name="Result" Kind="OutputPin" />
+            <Pin Id="T8j48cBnrNgMgBrikwB6HL" Name="Not Assigned" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="MOdGqt8I8pGQNniw5Fw3To" Name="Create" />
         <Patch Id="CQr9l4rp7h6QCntxBe1BI4" Name="Update" />
@@ -230,13 +276,20 @@
         <Link Id="NClpXC7Q4qQQN05VkIBhDN" Ids="OpYGsssuedAPyaOhuJsvwP,G2U7G8AWIeMPP7hFSwupTl" />
         <Link Id="UzEzxGKDDTeLtrCK3hieLO" Ids="SMcmmYm6bTtLyIPC9rOJSN,VKcW4MS4ownOKo0RIT0AhQ" />
         <Link Id="VXYYLKkMZOZOZ0yKfKdKWk" Ids="KKuCk5SnWuAQWuzs4qU4U5,Ir9I2NEDA2kNgkuS2fdvsP" />
-        <Link Id="HPzIPoncSwMMyGlI1BaU2Y" Ids="L1ZrMl2JUUrLULAxKmTWD6,I0Wly2Hlvg8O7bFF2OfA1k" />
-        <Link Id="NA7QRm1dMduMQHOODMQYwt" Ids="LtgcpzUhbPjMSTkUPsn3mH,SWKBEZ8WvIsMU1gmdHEEgc" />
         <Link Id="BSvIkUg8PesLOKIrgITbSF" Ids="KKuCk5SnWuAQWuzs4qU4U5,Qt0KxJqdSNEP6En8g6xImY" />
+        <Link Id="UQFG0BE1GTlOj2W7x1HSO4" Ids="LvxCr0vznEiQAHToObYuWm,BO7vrovR7LHLePxUwKGZ53" IsFeedback="true" />
+        <Link Id="EHw95xFR85dMXuNw08CDnt" Ids="L1ZrMl2JUUrLULAxKmTWD6,BO7vrovR7LHLePxUwKGZ53" />
+        <Link Id="AK4KjZ56sA0QOr0x8O5eVR" Ids="BO7vrovR7LHLePxUwKGZ53,I0Wly2Hlvg8O7bFF2OfA1k" />
+        <Link Id="UtCPGToZirEQWodgev48n8" Ids="QkevOkkOwiCQCHfOwy0yM5,NH78H62ern5NiwTgFK1MOK" IsFeedback="true" />
+        <Link Id="II2ZWl3A4jaQRCTTvI8gBF" Ids="LtgcpzUhbPjMSTkUPsn3mH,NH78H62ern5NiwTgFK1MOK" />
+        <Link Id="QbQi4jP7tcXMpX2HWLF2y3" Ids="NH78H62ern5NiwTgFK1MOK,SWKBEZ8WvIsMU1gmdHEEgc" />
+        <Link Id="NZQA5k9v07VPm9XEvgdjR1" Ids="KKuCk5SnWuAQWuzs4qU4U5,EoaN3Z1QV55LFWMU8cV85R" />
+        <Link Id="PyAdTePacJCOD68WNgopxq" Ids="JwA0mjvHIJmMhOqbidD2Gj,RNeQNugyfkqPWrL3BUgr8B" />
+        <Link Id="UiTdm5vByj9NiMFa5nhhUg" Ids="KKuCk5SnWuAQWuzs4qU4U5,RmmOAAbVEl3N9roF2x1SrC" />
+        <Link Id="QX54yxS5ncrOAfEFu6B62G" Ids="DMQp0VOHhRWLy0aqkAtygo,SiyFhvH4zYUPpJLxVs7Onv" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.0" />
-  <NugetDependency Id="BQMucwU59YQMMEwAnon0MJ" Location="ThreeFourteen.Finnhub.Client" Version="1.2.0" />
+  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.3-0282-ge32a5ae3ee" />
   <NugetDependency Id="JbtQ9R0CaS3M4gY3RK46hu" Location="TheMulti0.DuckSharp" Version="1.0.2" />
 </Document>
