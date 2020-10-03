@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FWrDWkpHhcpPOa5rlw0hfn" LanguageVersion="2020.2.0.269" Version="0.128">
-  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.2.0" />
+<Document xmlns:p="property" Id="FWrDWkpHhcpPOa5rlw0hfn" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="IhDTOqG0PbBQLoCcDBRSSM" Location="VL.CoreLib" Version="2020.2.2" />
   <Patch Id="B49oQkJgJtzLYKf5LRsNQf">
     <Canvas Id="E2DcNWZbgrhNH8qgF3joQS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,14 +15,19 @@
       </p:NodeReference>
       <Patch Id="A5MY6fEfcUUMFKL78hVMlx">
         <Canvas Id="AJUafjyN33IQW1B3NzJKGY" CanvasType="Group">
-          <Node Bounds="84,751,145,19" Id="Rrluc797UmyOY2oSb5i9qV">
+          <Node Bounds="62,739,165,19" Id="Rrluc797UmyOY2oSb5i9qV">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="Aqhz6cjLIwwO0Lnfzvb5on" Name="Bounds" Kind="InputPin" DefaultValue="1190, 399, 600, 400">
+            <Pin Id="Aqhz6cjLIwwO0Lnfzvb5on" Name="Bounds" Kind="InputPin" DefaultValue="928, 264, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Ca64jOw41ydMrWeEPwrfIP" Name="Bound to Document" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="OBO7b2rKXtnNogHdeYaKRU" Name="Input" Kind="InputPin" />
@@ -85,5 +90,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.2.0" />
+  <NugetDependency Id="JdSK9lKipi9PzeSoDHaVyF" Location="VL.Skia" Version="2020.2.2" />
 </Document>

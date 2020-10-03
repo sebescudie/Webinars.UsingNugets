@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Af79W7RuBYxPigr39ATp6R" LanguageVersion="2020.2.3.282" Version="0.128">
-  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.3-0282-ge32a5ae3ee" />
+<Document xmlns:p="property" Id="Af79W7RuBYxPigr39ATp6R" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="Ox67exchyDnLegymqieOEz" Location="VL.CoreLib" Version="2020.2.2" />
   <Patch Id="TZRPJVWPg88Oh9Oc8iM8gU">
     <Canvas Id="VWKXxAh9nkSMB599oHSrW6" DefaultCategory="Main" CanvasType="FullCategory">
       <Canvas Id="EdBVVY5hxqNPC0dNnSmqwQ" Name="DuckDuckGo" Position="433,588">
@@ -129,7 +129,7 @@
       </p:NodeReference>
       <Patch Id="Ucedqb1KWNjPmbPVHgnTvx">
         <Canvas Id="B5zPUpWufWhL5sOPXExD4P" CanvasType="Group">
-          <Pad Id="MUjUNJPm870ME8eVyhsHnJ" Bounds="58,182,278,40" ShowValueBox="true" isIOBox="true" Value="How could we make use of DuckDuckGo's InstantAnswer feature inside VVVV ?">
+          <Pad Id="MUjUNJPm870ME8eVyhsHnJ" Bounds="48,76,278,40" ShowValueBox="true" isIOBox="true" Value="How could we make use of DuckDuckGo's InstantAnswer feature inside VVVV ?">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -138,7 +138,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="75,364,81,19" Id="PfMM8X8OyAQQGjQO5pWZFh">
+          <Node Bounds="65,258,81,19" Id="PfMM8X8OyAQQGjQO5pWZFh">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Main" />
@@ -149,7 +149,7 @@
             <Pin Id="GGnTm3GhZOFLPJ8rEWgXXf" Name="Update" Kind="InputPin" />
             <Pin Id="SMcmmYm6bTtLyIPC9rOJSN" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="EPSFjT5on3sOWTEFY0Xf9t" Comment="Update" Bounds="153,346,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="EPSFjT5on3sOWTEFY0Xf9t" Comment="Update" Bounds="143,240,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -157,12 +157,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OpYGsssuedAPyaOhuJsvwP" Comment="Query" Bounds="77,301,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+          <Pad Id="OpYGsssuedAPyaOhuJsvwP" Comment="Query" Bounds="67,195,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CV5qldun7EgMUlWqRQRJB6" Bounds="256,338,228,61" ShowValueBox="true" isIOBox="true" Value="We've created this small wrapper to perform the DuckDuckGo Search. Peak inside to see how it's done!">
+          <Pad Id="CV5qldun7EgMUlWqRQRJB6" Bounds="246,232,228,61" ShowValueBox="true" isIOBox="true" Value="We've created this small wrapper to perform the DuckDuckGo Search. Peak inside to see how it's done!">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -171,7 +171,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="75,459,65,19" Id="NipQPSGQUv1OtJz2bTyFoT">
+          <Node Bounds="65,353,65,19" Id="NipQPSGQUv1OtJz2bTyFoT">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -181,7 +181,7 @@
             <Pin Id="KKuCk5SnWuAQWuzs4qU4U5" Name="Value" Kind="OutputPin" />
             <Pin Id="N6VPyeATVeKLPa4rnsnoJ1" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="JZ9XUzK3KQyLlabTYQo63w" Bounds="256,442,241,62" ShowValueBox="true" isIOBox="true" Value="When the search is over, we get an Observable carrying the results. As you can see, it's type is InstantAnswer.">
+          <Pad Id="JZ9XUzK3KQyLlabTYQo63w" Bounds="246,336,241,62" ShowValueBox="true" isIOBox="true" Value="When the search is over, we get an Observable carrying the results. As you can see, it's type is InstantAnswer.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -190,9 +190,9 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I0Wly2Hlvg8O7bFF2OfA1k" Comment="Abstract" Bounds="139,683,296,170" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="SWKBEZ8WvIsMU1gmdHEEgc" Comment="Entity" Bounds="518,683,130,-2" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Dus8XpFjCSOPbqbRdUP9NT" Bounds="543,573,220,59" ShowValueBox="true" isIOBox="true" Value="We can simply look in the node browser for InstantAnswer and see which nodes we can play with.">
+          <Pad Id="I0Wly2Hlvg8O7bFF2OfA1k" Comment="Abstract" Bounds="129,577,296,170" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="SWKBEZ8WvIsMU1gmdHEEgc" Comment="Entity" Bounds="508,577,130,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Dus8XpFjCSOPbqbRdUP9NT" Bounds="533,467,220,59" ShowValueBox="true" isIOBox="true" Value="We can simply look in the node browser for InstantAnswer and see which nodes we can play with.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -201,7 +201,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="75,570,67,29" Id="PaAPUsSDjXjMbdyKCdgARR">
+          <Node Bounds="53,438,93,80" Id="PaAPUsSDjXjMbdyKCdgARR">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -211,7 +211,7 @@
             <Patch Id="V7Yxp5FYl3zM95elGS21Zo" ManuallySortedPins="true">
               <Patch Id="El52RetIGp3MCtehN1D0qS" Name="Create" ManuallySortedPins="true" />
               <Patch Id="RtrbrLhtaBdOP1hyztMXwt" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="75,573,67,26" Id="PUD77SMMS0DMo0eWPz5Iyi">
+              <Node Bounds="65,467,67,26" Id="PUD77SMMS0DMo0eWPz5Iyi">
                 <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Abstract" />
@@ -221,10 +221,10 @@
                 <Pin Id="L1ZrMl2JUUrLULAxKmTWD6" Name="Abstract" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="BO7vrovR7LHLePxUwKGZ53" Bounds="139,618" Alignment="Bottom" />
-            <ControlPoint Id="LvxCr0vznEiQAHToObYuWm" Bounds="139,550" Alignment="Top" />
+            <ControlPoint Id="BO7vrovR7LHLePxUwKGZ53" Bounds="129,512" Alignment="Bottom" />
+            <ControlPoint Id="LvxCr0vznEiQAHToObYuWm" Bounds="129,444" Alignment="Top" />
           </Node>
-          <Node Bounds="454,570,67,29" Id="SY0Veakj7F2PFI010S9o00">
+          <Node Bounds="432,438,93,80" Id="SY0Veakj7F2PFI010S9o00">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -234,7 +234,7 @@
             <Patch Id="A2n2rT4QcWkLPpTSn2NhQe" ManuallySortedPins="true">
               <Patch Id="PXppGvbRtFOPZkvnz5WA9Z" Name="Create" ManuallySortedPins="true" />
               <Patch Id="HXbTujvC7DbMuAmggSB7ML" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="454,573,67,26" Id="GJo7Fwn04gWMuiRcKxqn4S">
+              <Node Bounds="444,467,67,26" Id="GJo7Fwn04gWMuiRcKxqn4S">
                 <p:NodeReference LastCategoryFullName="DuckSharp.InstantAnswer" LastSymbolSource="DuckSharp.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Entity" />
@@ -244,10 +244,10 @@
                 <Pin Id="LtgcpzUhbPjMSTkUPsn3mH" Name="Entity" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="NH78H62ern5NiwTgFK1MOK" Bounds="518,618" Alignment="Bottom" />
-            <ControlPoint Id="QkevOkkOwiCQCHfOwy0yM5" Bounds="518,550" Alignment="Top" />
+            <ControlPoint Id="NH78H62ern5NiwTgFK1MOK" Bounds="508,512" Alignment="Bottom" />
+            <ControlPoint Id="QkevOkkOwiCQCHfOwy0yM5" Bounds="508,444" Alignment="Top" />
           </Node>
-          <Node Bounds="63,505,65,19" Id="Q4wNQBiIL5ON9AZbhHLtHi">
+          <Node Bounds="53,399,65,19" Id="Q4wNQBiIL5ON9AZbhHLtHi">
             <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -256,7 +256,7 @@
             <Pin Id="JwA0mjvHIJmMhOqbidD2Gj" Name="Result" Kind="OutputPin" />
             <Pin Id="B01vTReDI2sP00sk5RR1zG" Name="Not Assigned" Kind="OutputPin" />
           </Node>
-          <Node Bounds="442,510,65,19" Id="LqkmZlA1XpDNk9p1jJDvc3">
+          <Node Bounds="432,404,65,19" Id="LqkmZlA1XpDNk9p1jJDvc3">
             <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -290,6 +290,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.3-0282-ge32a5ae3ee" />
+  <NugetDependency Id="V8f1uZ5fFLNLRb4GUECksQ" Location="VL.Skia" Version="2020.2.2" />
   <NugetDependency Id="JbtQ9R0CaS3M4gY3RK46hu" Location="TheMulti0.DuckSharp" Version="1.0.2" />
 </Document>

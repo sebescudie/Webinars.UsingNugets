@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="QhAZ9xNYHe6MaVU2Mhasaj" LanguageVersion="2020.1.1.97" Version="0.128">
-  <NugetDependency Id="BTl4dbtTy7kP07S9gBubks" Location="VL.CoreLib" Version="2020.1.1-0097-g82bdf128a1" />
+<Document xmlns:p="property" Id="QhAZ9xNYHe6MaVU2Mhasaj" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="BTl4dbtTy7kP07S9gBubks" Location="VL.CoreLib" Version="2020.2.2" />
   <Patch Id="HHBdnb9xLg5Mf5budnGcJL">
     <Canvas Id="KUnpYsCVNCnNbqD77fZxbD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="G1wE36iZMmGO8KGDnY0YHX">
         <Canvas Id="UWqsuJMocpDLZ6odIq4VjS" CanvasType="Group">
-          <Node Bounds="173,342,76,26" Id="UCEjblmHgYpNrcOtE1KDX0">
+          <Node Bounds="142,226,76,26" Id="UCEjblmHgYpNrcOtE1KDX0">
             <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="StringExtensionLibrary" />
@@ -25,13 +25,13 @@
             <Pin Id="M3DMSHo84E0MIhk4UPJ7cb" Name="Input" Kind="StateInputPin" />
             <Pin Id="RUdi9tUU1uROLkK0TCnpFB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JabKyveeHO2Qdkf78NISAv" Comment="" Bounds="175,307,78,15" ShowValueBox="true" isIOBox="true" Value="vvvv gamma">
+          <Pad Id="JabKyveeHO2Qdkf78NISAv" Comment="" Bounds="144,191,78,15" ShowValueBox="true" isIOBox="true" Value="vvvv gamma">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LPudzDSuw9rLgk2g4E9PPB" Comment="" Bounds="175,394,66,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="354,341,102,19" Id="AmsQecfPUWrOiBnygjoJ5v">
+          <Pad Id="LPudzDSuw9rLgk2g4E9PPB" Comment="" Bounds="144,278,66,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="323,225,102,19" Id="AmsQecfPUWrOiBnygjoJ5v">
             <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
@@ -40,14 +40,14 @@
             <Pin Id="Kx1s5AGhMjCMpFFBxKds0o" Name="Val" Kind="InputPin" />
             <Pin Id="LZxtaJ7eYFXLFTpbeZOkjK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="SGy49BF5s9rM2MITWqx3kb" Comment="Val" Bounds="356,306,78,15" ShowValueBox="true" isIOBox="true" Value="encrypt me">
+          <Pad Id="SGy49BF5s9rM2MITWqx3kb" Comment="Val" Bounds="325,190,78,15" ShowValueBox="true" isIOBox="true" Value="encrypt me">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="USyyHI06JtNN3FTkzngB1V" Comment="" Bounds="356,393,140,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="154,556,102,88" Id="AUDeHAWmRlfOqMQiYWJBGw">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="USyyHI06JtNN3FTkzngB1V" Comment="" Bounds="325,277,140,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="123,437,102,94" Id="AUDeHAWmRlfOqMQiYWJBGw">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
@@ -57,7 +57,7 @@
               <Patch Id="FkGS99NtGNANgG8oW1Fk5z" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Oc8p7RySklPMpkySbp8K3d" Name="Update" ManuallySortedPins="true" />
               <Patch Id="LZrvWaDKcJKOINPDMrX4NL" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="166,587,78,26" Id="VxTcW0ePpyiNca5BSIuvji">
+              <Node Bounds="135,471,78,26" Id="VxTcW0ePpyiNca5BSIuvji">
                 <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="AssemblyCategory" Name="StringExtensionLibrary" />
@@ -78,10 +78,10 @@
                 <Pin Id="ILTA2tyRpyRMcl7dJLuzUD" Name="Output" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="IIr6ZGxGJgDMA5hfElKJ2e" Bounds="168,563" Alignment="Top" />
-            <ControlPoint Id="CQWfbJkOEuqNvP1kAOma2h" Bounds="168,638" Alignment="Bottom" />
+            <ControlPoint Id="IIr6ZGxGJgDMA5hfElKJ2e" Bounds="137,443" Alignment="Top" />
+            <ControlPoint Id="CQWfbJkOEuqNvP1kAOma2h" Bounds="137,525" Alignment="Bottom" />
           </Node>
-          <Pad Id="OEynYeUttQZPfmJtUvI7Ae" Comment="" Bounds="168,468,85,76" ShowValueBox="true" isIOBox="true">
+          <Pad Id="OEynYeUttQZPfmJtUvI7Ae" Comment="" Bounds="137,352,85,76" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -96,8 +96,8 @@
               <Item>pre_Extensions</Item>
             </p:Value>
           </Pad>
-          <Pad Id="J3BOvZj8X5sP8wQa1CiHSA" Comment="" Bounds="168,675,77,65" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="354,587,76,26" Id="ETgzGbYUHjwPhs2zzT0P3Y">
+          <Pad Id="J3BOvZj8X5sP8wQa1CiHSA" Comment="" Bounds="137,559,77,65" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="323,471,76,26" Id="ETgzGbYUHjwPhs2zzT0P3Y">
             <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
@@ -107,13 +107,13 @@
             <Pin Id="H4IMF8fGFbrNqx9nDsfekJ" Name="Direction" Kind="InputPin" />
             <Pin Id="SekuO1tIEPmPgzgQlY2i9k" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="TUbklpRzUvFOujUF5GBtsj" Comment="" Bounds="356,528,91,15" ShowValueBox="true" isIOBox="true" Value="reverse/slash">
+          <Pad Id="TUbklpRzUvFOujUF5GBtsj" Comment="" Bounds="325,412,91,15" ShowValueBox="true" isIOBox="true" Value="reverse/slash">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UPX27cjQStoMY5mYjSMFuy" Comment="" Bounds="356,649,69,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="572,587,76,26" Id="A4aCc1AEAlMMNXNGom9z3B">
+          <Pad Id="UPX27cjQStoMY5mYjSMFuy" Comment="" Bounds="325,533,69,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="541,471,76,26" Id="A4aCc1AEAlMMNXNGom9z3B">
             <p:NodeReference LastCategoryFullName="StringExtensionLibrary.StringExtensions" LastSymbolSource="StringExtensionLibrary.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="StringExtensions" />
@@ -122,13 +122,13 @@
             <Pin Id="TpqZu1rjkf8PhwmL5BLE3V" Name="Input" Kind="StateInputPin" />
             <Pin Id="JpDlKl5yiiqNSVDzaGy4z7" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="ApVW5PYjX6WP0bjrDc4qyi" Comment="" Bounds="574,528,116,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.256">
+          <Pad Id="ApVW5PYjX6WP0bjrDc4qyi" Comment="" Bounds="543,412,116,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.256">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PC89ggpAo4EPtpudIRHn8J" Comment="" Bounds="574,649,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="U2NmRpVpn3wLNtYHnWBp1n" Bounds="166,202,527,52" ShowValueBox="true" isIOBox="true" Value="Now that we've installed the StringExtensionsLibrary nuget, many string utils are available to us :">
+          <Pad Id="PC89ggpAo4EPtpudIRHn8J" Comment="" Bounds="543,533,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U2NmRpVpn3wLNtYHnWBp1n" Bounds="135,101,527,52" ShowValueBox="true" isIOBox="true" Value="Now that we've installed the StringExtensionsLibrary nuget, many string utils are available to us :">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -146,14 +146,18 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="CkfiLQelryKLoyOqUMFxLb" Bounds="99,666,608,71" ShowValueBox="true" isIOBox="true" Value="Seeing red nodes? Go to the Document menu in the top left corner, click Dependencies, .NET Nugets, then right-click StringExtensionsLibrary and click &quot;Install latest stable&quot;.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">11</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="T7LuWDXXTZUQSzf5fdxcv2" Name="Create" />
         <Patch Id="La4FK8F43N9P7ZIj0mCECI" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="SGQ8U8LTkljOzOGCzoSbqV">
           <Fragment Id="U26MLP4h755P54iYtvtdtw" Patch="T7LuWDXXTZUQSzf5fdxcv2" Enabled="true" />
           <Fragment Id="DTJsNFpYzxmOQSg8rY4Ryo" Patch="La4FK8F43N9P7ZIj0mCECI" Enabled="true" />
@@ -173,6 +177,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TjDI5IiHApwO99PhAaFVSm" Location="VL.Skia" Version="2020.1.1-0097-g82bdf128a1" />
+  <NugetDependency Id="TjDI5IiHApwO99PhAaFVSm" Location="VL.Skia" Version="2020.2.2" />
   <NugetDependency Id="DmAmlY4MBowMdTyNre77Oz" Location="StringExtensionsLibrary" Version="1.0.0" />
 </Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="P2F8VWvPCRlPdbJmEnM2kB" LanguageVersion="2020.2.0.269" Version="0.128">
-  <NugetDependency Id="Ioln3wCfWKeQFttnKe5l3L" Location="VL.CoreLib" Version="2020.2.0" />
+<Document xmlns:p="property" Id="P2F8VWvPCRlPdbJmEnM2kB" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="Ioln3wCfWKeQFttnKe5l3L" Location="VL.CoreLib" Version="2020.2.2" />
   <Patch Id="ObO0rPIS4v3LCFiAPLAIa9">
     <Canvas Id="B3YwGLQis34MmnmTvuXnKU" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -31,7 +31,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="LeE6RNf2GJgNktLoHGarZC" Name="Bounds" Kind="InputPin" DefaultValue="1151, 133, 600, 400">
+            <Pin Id="LeE6RNf2GJgNktLoHGarZC" Name="Bounds" Kind="InputPin" DefaultValue="904, 152, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -547,6 +547,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TVXrPiyHzz2LSNuqiqMgxr" Location="VL.Skia" Version="2020.2.0" />
+  <NugetDependency Id="TVXrPiyHzz2LSNuqiqMgxr" Location="VL.Skia" Version="2020.2.2" />
   <NugetDependency Id="IOMTjmujrJsPyeDs3Fx5LS" Location="Aether.Physics2D" Version="1.5.0" />
 </Document>

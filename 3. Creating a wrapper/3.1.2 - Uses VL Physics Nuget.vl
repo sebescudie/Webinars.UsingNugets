@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="P2F8VWvPCRlPdbJmEnM2kB" LanguageVersion="2020.2.0.269" Version="0.128">
-  <NugetDependency Id="Ioln3wCfWKeQFttnKe5l3L" Location="VL.CoreLib" Version="2020.2.0" />
+<Document xmlns:p="property" Id="P2F8VWvPCRlPdbJmEnM2kB" LanguageVersion="2020.2.3.282" Version="0.128">
+  <NugetDependency Id="Ioln3wCfWKeQFttnKe5l3L" Location="VL.CoreLib" Version="2020.2.3-0282-ge32a5ae3ee" />
   <Patch Id="ObO0rPIS4v3LCFiAPLAIa9">
     <Canvas Id="B3YwGLQis34MmnmTvuXnKU" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -116,14 +116,19 @@
             <Pin Id="Fksmp1W9ScfPXzIJW9ZNfQ" Name="Input 3" Kind="InputPin" />
             <Pin Id="OAPQK15e1pDPTBUHcwkHdJ" Name="Input 4" Kind="InputPin" />
           </Node>
-          <Node Bounds="198,946,145,19" Id="IDkrgYSayHEPtNNfER369T">
+          <Node Bounds="178,950,165,19" Id="IDkrgYSayHEPtNNfER369T">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="LeE6RNf2GJgNktLoHGarZC" Name="Bounds" Kind="InputPin" DefaultValue="1654, 389, 600, 400">
+            <Pin Id="LeE6RNf2GJgNktLoHGarZC" Name="Bounds" Kind="InputPin" DefaultValue="884, 240, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="NJHH7XDmITsM7sgMOiRELE" Name="Bound to Document" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="PKK5RIVmMybPVYgO3vmigB" Name="Input" Kind="InputPin" />
@@ -564,6 +569,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TVXrPiyHzz2LSNuqiqMgxr" Location="VL.Skia" Version="2020.2.0" />
+  <NugetDependency Id="TVXrPiyHzz2LSNuqiqMgxr" Location="VL.Skia" Version="2020.2.3-0282-ge32a5ae3ee" />
   <DocumentDependency Id="V6JjXoxjLMDMF0dlDFiloj" Location="./VL.2D.Physics.vl" />
 </Document>
